@@ -1,0 +1,18 @@
+# CONCOURSE
+.credentials.yml
+
+# VSCODE
+.vscode/ 
+
+# GO
+coverage.out
+
+# macOS
+.DS_Store
+
+# DREAMWAVER
+dwsync.xml
+_notes/
+
+# SFTP VS CODE EXTENTION
+sftp.json
