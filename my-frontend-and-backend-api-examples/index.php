@@ -106,7 +106,7 @@
 
             <h2 class="hidden"> HEADER </h2>
 
-            <h1> JEFF'S PHP CONTAINERS </h1>
+            <h1> JEFF'S POOPs CONTAINERS </h1>
 
             <!-- <div id="header_container">
                 <p> tbd </p>

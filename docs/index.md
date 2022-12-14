@@ -1,8 +1,8 @@
 ---
 layout: default
-title: JeffDeCola/my-php-containers
-projectname : my-php-containers
-summary: A place to keep my php containers. All containers designed for dynamic screen widths.
+title: JeffDeCola/my-frontend-and-backend-api-examples
+projectname : my-frontend-and-backend-api-examples
+summary: Frontend and backend API examples.
 ---
 
 {% include README.md %}

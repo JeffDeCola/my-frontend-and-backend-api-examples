@@ -1,56 +1,75 @@
-# my-php-containers
+# my-frontend-and-backend-api-examples
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a7fd79cc4717b3da27d6/maintainability)](https://codeclimate.com/github/JeffDeCola/my-php-containers/maintainability)
-[![Issue Count](https://codeclimate.com/github/JeffDeCola/my-php-containers/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-php-containers/issues)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a7fd79cc4717b3da27d6/maintainability)](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/maintainability)
+[![Issue Count](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-_A place to keep my php containers.
-All containers designed for dynamic screen widths._
-
-These containers also contain info I gathered from other sources.
+_A place to keep my frontend and backend API examples._
 
 Table of Contents,
 
-* [BUILDING BLOCKS](https://github.com/JeffDeCola/my-php-containers#building-blocks)
-* [INTERACTION](https://github.com/JeffDeCola/my-php-containers#interaction)
-* [VISUAL](https://github.com/JeffDeCola/my-php-containers#visual)
+* [BROWSER AND WEB SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser-and-web-server-apis)
+* [WEB SERVER AND BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#web-server-and-backend-server-apis)
+* [A COMBINATION OF BROWSER, WEB SERVER AND BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#a-combination-of-browser-web-server-and-backend-server-apis)
 
 Documentation and reference,
 
-* [php-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet)
-* [See offsite demos](http://www.jeffdecola.com/my-php-containers/index.php)
+* [See offsite demos](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php)
 
-[GitHub Webpage](https://jeffdecola.github.io/my-php-containers/)
+[GitHub Webpage](https://jeffdecola.github.io/my-frontend-and-backend-api-examples/)
 _built with
-[concourse ci](https://github.com/JeffDeCola/my-php-containers/blob/master/ci-README.md)_
+[concourse ci](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/master/ci-README.md)_
 
-## PHP CONTAINERS
+## FRONTEND AND BACKEND API EXAMPLES
 
-_All sections in alphabetical order._
+A frontend consists of a browser.  The backend can consist of a
+web-server and a backend-server.
 
-### BUILDING BLOCKS
+### BROWSER AND WEB SERVER APIs
 
-* [dynamic_items_container](https://github.com/JeffDeCola/my-php-containers/tree/master/building-blocks/dynamic_items_container)
+* [browser-to-web-server-ajax-XHR-calls](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/master/browser-to-web-server/ajax-XHR-calls)
 
-  _Displays items (e.g. menu or picture) that will center and collapse properly on
-  smaller screens._
+  _Two numbers will be
+  sent from a browser (client)
+  to a web server (server)
+  that will return the sum.
+  A webpage will be used to
+  enter the data and
+  display the results.
+  The API will use an ajax XHR call
+  written in javascript and php._
 
-### INTERACTION
+* [web-server-to-browser-ajax-XHR-calls](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/master/browser-to-web-server/ajax-XHR-calls)
 
-* [contact_form_container](https://github.com/JeffDeCola/my-php-containers/tree/master/interaction/contact_form_container)
+  _A ?????? will be
+  sent from a web server (client)
+  to a browser (server)
+  that will return an acknowledgment.
+  A webpage will be used to
+  display the ????.
+  The API will use an ajax XHR call
+  written in javascript and php._
 
-  _An online contact form that is sent to an email._
+### WEB SERVER AND BACKEND SERVER APIs
 
-* [jeffs_tiny_url_container](https://github.com/JeffDeCola/my-php-containers/tree/master/interaction/jeffs_tiny_url_container)
+* [web-server-to-backend-server-gRPC-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/master/interaction/contact_form_container)
 
-  _Shorten Long URLs to Tiny URLs. Information stored in a mySQLi database._
+  _Two numbers will be
+  sent from a web server (client)
+  to a backend server (server)
+  that will return the sum.
+  The API will use an gRPC with protobuf
+  written in php and go._
 
-### VISUAL
+* [backend-server-to-web-server-gRPC-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/master/browser-to-web-server/ajax-XHR-calls)
 
-* [narrow_picture_container](https://github.com/JeffDeCola/my-php-containers/tree/master/visual/narrow_picture_container)
+  _A ?????? will be
+  sent from a backend server (client)
+  to a web server (server)
+  that will return an acknowledgment.
+  The API will use an gRPC with protobuf
+  written in go and php._
 
-  _Allow a picture to scale and display across the screen._
+### A COMBINATION OF BROWSER, WEB SERVER AND BACKEND SERVER APIs
 
-* [video_container](https://github.com/JeffDeCola/my-php-containers/tree/master/visual/video_container)
-
-  _For Youtube or Vimeo with optional background._
+* coming soon
