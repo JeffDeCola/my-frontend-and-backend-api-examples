@@ -15,7 +15,7 @@
 
 ## EXAMPLE
 
-![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../docs/pics/ajax-XHR-calls-browser-to-web-server.jpg)
+![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../../docs/pics/ajax-XHR-calls-browser-to-web-server.jpg)
 
 ## TO USE
 

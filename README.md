@@ -36,10 +36,11 @@ web server and/or a backend server.
   Two numbers will be
   sent from a browser (client)
   to a web server (server)
-  that will return the sum.
+  that will calculate
+  and return the sum.
   A webpage will be used to
   enter the data and
-  display the results._
+  display the roundtrip results._
 
 * [ajax-XHR-calls-web-server-to-browser](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser)
 
@@ -61,7 +62,8 @@ web server and/or a backend server.
   Two numbers will be
   sent from a web server (client)
   to a backend server (server)
-  that will return the sum._
+  that will calculate
+  and return the sum._
 
 * [gRPC-with-protobuf-backend-server-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server)
 
@@ -74,4 +76,20 @@ web server and/or a backend server.
 
 ### BROWSER, WEB SERVER & BACKEND SERVER APIs
 
-* coming soon
+* [ajax-XHR-calls-and-gRPC-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf)
+
+  _The API will use an **ajax XHR call**
+  written in javascript and php
+  and **gRPC with protobuf**
+  written in go and php.
+  Two numbers will be
+  sent from a browser (client)
+  to a web server (server).
+  Two numbers will then be
+  sent from the web server (client)
+  to a backend server (server)
+  that will calculate
+  and return the sum.
+  A webpage will be used to
+  enter the data and
+  display the roundtrip results._
