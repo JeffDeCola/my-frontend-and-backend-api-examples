@@ -27,7 +27,7 @@ web server and/or a backend server.
 
 ### BROWSER & WEB SERVER APIs
 
-* [ajax-XHR-calls-browser-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-example/browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server)
+* [ajax-XHR-calls-browser-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server)
 
   _The API will use an **ajax XHR call**
   written in javascript and php.
@@ -39,7 +39,7 @@ web server and/or a backend server.
   enter the data and
   display the results._
 
-* [ajax-XHR-calls-web-server-to-browser](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-example/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser)
+* [ajax-XHR-calls-web-server-to-browser](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser)
 
   _The API will use an **ajax XHR call**
   written in javascript and php.
@@ -52,7 +52,7 @@ web server and/or a backend server.
 
 ### WEB SERVER & BACKEND SERVER APIs
 
-* [gRPC-with-protobuf-web-server-to-backend-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-example/web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server)
+* [gRPC-with-protobuf-web-server-to-backend-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server)
 
   _The API will use an **gRPC with protobuf**
   written in php and go.
@@ -61,7 +61,7 @@ web server and/or a backend server.
   to a backend server (server)
   that will return the sum._
 
-* [gRPC-with-protobuf-backend-server-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-example/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server)
+* [gRPC-with-protobuf-backend-server-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server)
 
   _The API will use an gRPC with protobuf
   written in go and php.
