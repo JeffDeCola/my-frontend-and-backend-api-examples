@@ -13,7 +13,7 @@ display the ????._
 
 ## EXAMPLE
 
-![IMAGE - ajax-XHR-calls-web-server-to-browser - IMAGE](../../../docs/pics/ajax-XHR-calls-web-server-to-browser)
+![IMAGE - ajax-XHR-calls-web-server-to-browser - IMAGE](../../../docs/pics/ajax-XHR-calls-web-server-to-browser.jpg)
 
 ## TO USE
 
