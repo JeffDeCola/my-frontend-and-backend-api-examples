@@ -1,4 +1,4 @@
 #!/bin/bash
-# my-php-containers destroy-pipeline.sh
+# my-frontend-and-backend-api-examples destroy-pipeline.sh
 
-fly -t ci destroy-pipeline --pipeline my-php-containers
+fly -t ci destroy-pipeline --pipeline my-frontend-and-backend-api-examples
