@@ -1,4 +1,4 @@
 #!/bin/bash
-# my-php-containers set-pipeline.sh
+# my-frontend-and-backend-api-examples set-pipeline.sh
 
-fly -t ci set-pipeline -p my-php-containers -c pipeline.yml --load-vars-from ../../../.credentials.yml
+fly -t ci set-pipeline -p my-frontend-and-backend-api-examples -c pipeline.yml --load-vars-from ../../../.credentials.yml

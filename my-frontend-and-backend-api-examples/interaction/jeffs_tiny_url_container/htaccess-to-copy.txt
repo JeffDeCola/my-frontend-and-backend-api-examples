@@ -1,3 +1,0 @@
-
-# Internally rewrite shortened URL requests to de-shortened URL lookup script filepath plus query string
-RewriteRule ^([\w\d]{4})$ php_scripts/jeffs_tiny_url_decoder.php?decode=$1 [L]

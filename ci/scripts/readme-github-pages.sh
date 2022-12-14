@@ -1,5 +1,5 @@
 #!/bin/sh
-# my-php-containers readme-github-pages.sh
+# my-frontend-and-backend-api-examples readme-github-pages.sh
 
 echo " "
 
@@ -17,14 +17,14 @@ else
     echo " "
 fi
 
-echo "The goal is to git clone /my-php-containers to /my-php-containers-updated"
+echo "The goal is to git clone /my-frontend-and-backend-api-examples to /my-frontend-and-backend-api-examples-updated"
 echo "Then script will edit the /docs/_includes/README.md for GITHUB WEBPAGES"
 echo "Finally push the changes in /docs/_includes/README.md to github"
 echo " "
 
 echo "At start, you should be in a /tmp/build/xxxxx directory with two folders:"
-echo "   /my-php-containers"
-echo "   /my-php-containers-updated (created in task-build-push.yml task file)"
+echo "   /my-frontend-and-backend-api-examples"
+echo "   /my-frontend-and-backend-api-examples-updated (created in task-build-push.yml task file)"
 echo " "
 
 echo "pwd is: $PWD"
@@ -34,12 +34,12 @@ echo "List whats in the current directory"
 ls -la
 echo " "
 
-echo "git clone my-php-containers to my-php-containers-updated"
-git clone my-php-containers my-php-containers-updated
+echo "git clone my-frontend-and-backend-api-examples to my-frontend-and-backend-api-examples-updated"
+git clone my-frontend-and-backend-api-examples my-frontend-and-backend-api-examples-updated
 echo " "
 
-echo "cd my-php-containers-updated"
-cd my-php-containers-updated
+echo "cd my-frontend-and-backend-api-examples-updated"
+cd my-frontend-and-backend-api-examples-updated
 echo " "
 
 echo "List whats in the current directory"

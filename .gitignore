@@ -14,8 +14,5 @@ coverage.out
 dwsync.xml
 _notes/
 
-# jeffs_tiny_url_container
-sql_pw-ignore.php
-
 # SFTP VS CODE EXTENTION
 sftp.json
