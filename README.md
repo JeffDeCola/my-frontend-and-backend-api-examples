@@ -25,6 +25,8 @@ _built with
 A frontend consists of a browser.  The backend may consist of a
 web server and/or a backend server.
 
+![IMAGE - frontend-backend-overview - IMAGE](docs/pics/frontend-backend-overview.jpg)
+
 ### BROWSER & WEB SERVER APIs
 
 * [ajax-XHR-calls-browser-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server)
@@ -63,7 +65,7 @@ web server and/or a backend server.
 
 * [gRPC-with-protobuf-backend-server-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server)
 
-  _The API will use an gRPC with protobuf
+  _The API will use an **gRPC with protobuf**
   written in go and php.
   A ?????? will be
   sent from a backend server (client)
