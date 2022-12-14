@@ -15,48 +15,48 @@
     
         // THE PAGES
         $whitelist = array( "",
-                            "contact_form_container",
-                            "dynamic_items_container",
-                            "jeffs_tiny_url_container",
-                            "narrow_picture_container",
-                            "video_container");
+                            "ajax-XHR-calls-browser-to-web-server",
+                            "ajax-XHR-calls-web-server-to-browser",
+                            "gRPC-with-protobuf-web-server-to-backend-server",
+                            "gRPC-with-protobuf-backend-server-to-web-server",
+                            "ajax-XHR-calls-and-gRPC-with-protobuf");
 
         // THE PAGE TITLE
         if (in_array($_GET['page'], $whitelist)) {
             if ($_GET['page'] == "") {
-                echo "<title> CONTAINERS - Jeff DeCola </title>";
-                echo "<meta name='Description' content='CONTAINERS - Jeff DeCola' />";
+                echo "<title> APIs - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - Jeff DeCola' />";
             }
-            elseif ($_GET['page'] == "contact_form_container") {
-                echo "<title> CONTAINERS - contact_form_container - Jeff DeCola </title>";
-                echo "<meta name='Description' content='CONTAINERS - contact_form_container - Jeff DeCola' />";
+            elseif ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server") {
+                echo "<title> APIs - ajax-XHR-calls-browser-to-web-server - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - ajax-XHR-calls-browser-to-web-server - Jeff DeCola' />";
             }
-            elseif ($_GET['page'] == "dynamic_items_container") {
-                echo "<title> CONTAINERS - dynamic_items_container - Jeff DeCola </title>";
-                echo "<meta name='Description' content='CONTAINERS - dynamic_items_container - Jeff DeCola' />";
+            elseif ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser") {
+                echo "<title> APIs - ajax-XHR-calls-web-server-to-browser - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - ajax-XHR-calls-web-server-to-browser - Jeff DeCola' />";
             }
-            elseif ($_GET['page'] == "jeffs_tiny_url_container") {
-                echo "<title> CONTAINERS - jeffs_tiny_url_container - Jeff DeCola </title>";
-                echo "<meta name='Description' content='CONTAINERS - jeffs_tiny_url_container - Jeff DeCola' />";
+            elseif ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server") {
+                echo "<title> APIs - gRPC-with-protobuf-web-server-to-backend-server - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - gRPC-with-protobuf-web-server-to-backend-server - Jeff DeCola' />";
             }
-            elseif ($_GET['page'] == "narrow_picture_container") {
-                echo "<title> CONTAINERS - narrow_picture_container - Jeff DeCola </title>";
-                echo "<meta name='Description' content='CONTAINERS - narrow_picture_container - Jeff DeCola' />";
+            elseif ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server") {
+                echo "<title> APIs - gRPC-with-protobuf-backend-server-to-web-server - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - gRPC-with-protobuf-backend-server-to-web-server - Jeff DeCola' />";
             }
-            elseif ($_GET['page'] == "video_container") {
-                echo "<title> CONTAINERS - video_container - Jeff DeCola </title>";
-                echo "<meta name='Description' content='CONTAINERS - video_container - Jeff DeCola' />";
+            elseif ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf") {
+                echo "<title> APIs - ajax-XHR-calls-and-gRPC-with-protobuf - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - ajax-XHR-calls-and-gRPC-with-protobuf - Jeff DeCola' />";
             }
             // For the index.php page
             else  {
-                echo "<title> CONTAINERS - Jeff DeCola </title>";
-                echo "<meta name='Description' content='CONTAINERS - Jeff DeCola' />";
+                echo "<title> APIs - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - Jeff DeCola' />";
             }
         }
         // The page does not exist - Just give a 404 error
         else {
-            echo "<title>404 - CONTAINERS - PAGE NOT FOUND - Jeff DeCola </title>";
-            echo "<meta name='Description' content='404 - CONTAINERS - PAGE NOT FOUND - Jeff DeCola' />";
+            echo "<title>404 - APIs - PAGE NOT FOUND - Jeff DeCola </title>";
+            echo "<meta name='Description' content='404 - APIs - PAGE NOT FOUND - Jeff DeCola' />";
         }
     ?>
 
@@ -73,8 +73,8 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css?v=<?php echo date('his'); ?>"/>
     <link rel="stylesheet" type="text/css" href="../css/template.css?v=<?php echo date('his'); ?>"/>
     <link rel="stylesheet" type="text/css" href="../css/wrappers.css?v=<?php echo date('his'); ?>"/>
-    <link rel="stylesheet" type="text/css" href="../css/containers.css?v=<?php echo date('his'); ?>"/>
-    <link rel="stylesheet" type="text/css" href="css/containers.css?v=<?php echo date('his'); ?>"/>
+    <link rel="stylesheet" type="text/css" href="../css/APIs.css?v=<?php echo date('his'); ?>"/>
+    <link rel="stylesheet" type="text/css" href="css/APIs.css?v=<?php echo date('his'); ?>"/>
 
     <!-- GOOGLE FONT -->
     <!-- Make sure to update Body tag in template.css with the font name -->
@@ -106,7 +106,7 @@
 
             <h2 class="hidden"> HEADER </h2>
 
-            <h1> JEFF'S POOPs CONTAINERS </h1>
+            <h1> JEFF'S POOPs APIs </h1>
 
             <!-- <div id="header_container">
                 <p> tbd </p>
@@ -125,13 +125,13 @@
 
              <div id="nav_container">
                 <ul>
-                    <li><a href="http://www.jeffdecola.com/my-php-containers/index.php?page=contact_form_container"> contact_form_container </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-php-containers/index.php?page=dynamic_items_container"> dynamic_items_container </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-php-containers/index.php?page=jeffs_tiny_url_container"> jeffs_tiny_url_container </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-php-containers/index.php?page=narrow_picture_container"> narrow_picture_container </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-php-containers/index.php?page=video_container"> video_container </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server"> ajax-XHR-calls-browser-to-web-server </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-web-server-to-browser"> ajax-XHR-calls-web-server-to-browser </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-web-server-to-backend-server"> gRPC-with-protobuf-web-server-to-backend-server </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-backend-server-to-web-server"> gRPC-with-protobuf-backend-server-to-web-server </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-and-gRPC-with-protobuf"> ajax-XHR-calls-and-gRPC-with-protobuf </a> </li>
                     <br />
-                    <li><a href="https://github.com/JeffDeCola/my-php-containers"> MY PHP GITHUB REPO </a> </li>
+                    <li><a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples"> MY PHP GITHUB REPO </a> </li>
                     <li><a href="http://www.jeffdecola.com"> HOME </a> </li>
                 </ul>
             </div>
@@ -153,42 +153,87 @@
 
                     if (in_array($_GET['page'], $whitelist)) {
                         if ($_GET['page'] == "") { ?>
-                            <p> CHOOSE A CONTAINER ABOVE </p>
+                            <p> CHOOSE AN API EXAMPLE ABOVE </p>
                         <?php }
-                        elseif ($_GET['page'] == "contact_form_container") { ?>
-                            <h2> CONTACT FORM CONTAINER </h2>
-                            <p> An online contact form that is sent to an email </p>
+                        elseif ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server") { ?>
+                            <h2> USING ajax XHR calls FROM A BROWSER TO A WEB SERVER </h2>
+                            <p> The API will use an <b> ajax XHR call </b>
+                                written in javascript and php.
+                                Two numbers will be
+                                sent from a browser (client)
+                                to a web server (server)
+                                that will calculate
+                                and return the sum.
+                                A webpage will be used to
+                                enter the data and
+                                display the roundtrip results.
+                            </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-php-containers/tree/master/interaction/contact_form_container"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/interaction/ajax-XHR-calls-browser-to-web-server"> here </a>
                             </p>
                         <?php }
-                        elseif ($_GET['page'] == "dynamic_items_container") { ?>
-                            <h2> DYNAMIC ITEMS CONTAINER </h2>
-                            <p> Displays items (e.g. menu or picture) that will center and collapse properly on smaller screens </p>
+                        elseif ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser") { ?>
+                            <h2> USING ajax XHR calls FROM A WEB SERVER TO A BROWSER </h2>
+                            <p> The API will use an <b> ajax XHR call </b>
+                                written in javascript and php.
+                                A ?????? will be
+                                sent from a web server (client)
+                                to a browser (server)
+                                that will return an acknowledgment.
+                                A webpage will be used to
+                                display the ????.
+                            </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-php-containers/tree/master/building-blocks/dynamic_items_container"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/building-blocks/ajax-XHR-calls-web-server-to-browser"> here </a>
                             </p>
                         <?php }
-                        elseif ($_GET['page'] == "jeffs_tiny_url_container") { ?>
-                            <h2> JEFFS TINY URL CONTAINER </h2>
-                            <p> Shorten Long URLs to Tiny URLs </p>
-                            <p> Information stored in a mySQLi database </p>
+                        elseif ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server") { ?>
+                            <h2> USING gRPC with protobuf FROM A WEB SERVER TO A BACKEND SERVER </h2>
+                            <p> The API will use an <b> gRPC with protobuf </b>
+                                written in php and go.
+                                Two numbers will be
+                                sent from a web server (client)
+                                to a backend server (server)
+                                that will calculate
+                                and return the sum.
+                            </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-php-containers/tree/master/interaction/jeffs_tiny_url_container"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/interaction/gRPC-with-protobuf-web-server-to-backend-server"> here </a>
                             </p>
                         <?php }
-                        elseif ($_GET['page'] == "narrow_picture_container") { ?>
-                            <h2> NARROW PICTURE CONTAINER </h2>
-                            <p> Allow a picture to scale and display across the screen </p>
+                        elseif ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server") { ?>
+                            <h2> USING gRPC with protobuf FROM A BACKEND SERVER TO A WEB SERVER </h2>
+                            <p> The API will use an <p> gRPC with protobuf </p>
+                                written in go and php.
+                                A ?????? will be
+                                sent from a backend server (client)
+                                to a web server (server)
+                                that will return an acknowledgment.
+                            </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-php-containers/tree/master/visual/narrow_picture_container"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/visual/gRPC-with-protobuf-backend-server-to-web-server"> here </a>
                             </p>
                         <?php }
-                        elseif ($_GET['page'] == "video_container") { ?>
-                            <h2> VIDEO CONTAINER </h2>
-                            <p> A video container for Youtube or Vimeo with an optional background image </p>
+                        elseif ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf") { ?>
+                            <h2> USING ajax XHR calls FROM A BROWSER TO A WEB SERVER & USING gRPC with protobuf FROM A WEB SERVER TO A BACKEND SERVER </h2>
+                            <p> The API will use an <b> ajax XHR call </b>
+                                written in javascript and php
+                                and <b> gRPC with protobuf </b>
+                                written in go and php.
+                                Two numbers will be
+                                sent from a browser (client)
+                                to a web server (server).
+                                Two numbers will then be
+                                sent from the web server (client)
+                                to a backend server (server)
+                                that will calculate
+                                and return the sum.
+                                A webpage will be used to
+                                enter the data and
+                                display the roundtrip results.
+                            </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-php-containers/tree/master/visual/video_container"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/visual/ajax-XHR-calls-and-gRPC-with-protobuf"> here </a>
                             </p>
                         <?php }
                         // For the index.php page
@@ -198,7 +243,7 @@
                     }
                     // The page does not exist - Just give a 404 error
                     else { ?>
-                        <p> CHOOSE A CONTAINER </p>
+                        <p> CHOOSE AN API EXAMPLE ABOVE </p>
                     <?php }
 
                 ?>
@@ -222,25 +267,25 @@
                                 if ($_GET['page'] == "") {
                                     // Blank
                                 }
-                                else if ($_GET['page'] == "contact_form_container")
+                                else if ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server")
                                 {
-                                    include("interaction/contact_form_container/contact_form_container.php");
+                                    include("interaction/my-frontend-and-backend-api-examples/ajax-XHR-calls-browser-to-web-server.php");
                                 }
-                                else if ($_GET['page'] == "dynamic_items_container")
+                                else if ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser")
                                 {
-                                    include("building-blocks/dynamic_items_container/dynamic_items_container.php");
+                                    include("building-blocks/ajax-XHR-calls-web-server-to-browser/ajax-XHR-calls-web-server-to-browser.php");
                                 }
-                                else if ($_GET['page'] == "jeffs_tiny_url_container")
+                                else if ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server")
                                 {
-                                    include("interaction/jeffs_tiny_url_container/jeffs_tiny_url_container.php");
+                                    include("interaction/gRPC-with-protobuf-web-server-to-backend-server/gRPC-with-protobuf-web-server-to-backend-server.php");
                                 }
-                                else if ($_GET['page'] == "narrow_picture_container")
+                                else if ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server")
                                 {
-                                    include("visual/narrow_picture_container/narrow_picture_container.php");
+                                    include("visual/gRPC-with-protobuf-backend-server-to-web-server/gRPC-with-protobuf-backend-server-to-web-server.php");
                                 }
-                                else if ($_GET['page'] == "video_container")
+                                else if ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf")
                                 {
-                                    include("visual/video_container/video_container.php");
+                                    include("visual/ajax-XHR-calls-and-gRPC-with-protobuf/ajax-XHR-calls-and-gRPC-with-protobuf.php");
                                 }
                             }
                             // NOT IN WHITELIST - Page does not exist - Just give a 404 error
