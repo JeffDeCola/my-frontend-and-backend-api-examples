@@ -74,11 +74,11 @@
     <link rel="stylesheet" type="text/css" href="../css/template.css?v=<?php echo date('his'); ?>"/>
     <link rel="stylesheet" type="text/css" href="../css/wrappers.css?v=<?php echo date('his'); ?>"/>
     <link rel="stylesheet" type="text/css" href="../css/APIs.css?v=<?php echo date('his'); ?>"/>
-    <link rel="stylesheet" type="text/css" href="css/APIs.css?v=<?php echo date('his'); ?>"/>
+    <link rel="stylesheet" type="text/css" href="css/api.css?v=<?php echo date('his'); ?>"/>
 
     <!-- GOOGLE FONT -->
     <!-- Make sure to update Body tag in template.css with the font name -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Domine"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Domine"/>
 
     <!-- JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -131,7 +131,7 @@
                     <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-backend-server-to-web-server"> gRPC-with-protobuf-backend-server-to-web-server </a> </li>
                     <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-and-gRPC-with-protobuf"> ajax-XHR-calls-and-gRPC-with-protobuf </a> </li>
                     <br />
-                    <li><a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples"> MY PHP GITHUB REPO </a> </li>
+                    <li><a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples"> ALL CODE ON MY GITHUB REPO </a> </li>
                     <li><a href="http://www.jeffdecola.com"> HOME </a> </li>
                 </ul>
             </div>
@@ -169,7 +169,7 @@
                                 display the roundtrip results.
                             </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/interaction/ajax-XHR-calls-browser-to-web-server"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server"> here </a>
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser") { ?>
@@ -184,7 +184,7 @@
                                 display the ????.
                             </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/building-blocks/ajax-XHR-calls-web-server-to-browser"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser"> here </a>
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server") { ?>
@@ -198,7 +198,7 @@
                                 and return the sum.
                             </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/interaction/gRPC-with-protobuf-web-server-to-backend-server"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server"> here </a>
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server") { ?>
@@ -211,7 +211,7 @@
                                 that will return an acknowledgment.
                             </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/visual/gRPC-with-protobuf-backend-server-to-web-server"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server"> here </a>
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf") { ?>
@@ -233,7 +233,7 @@
                                 display the roundtrip results.
                             </p>
                             <p> Code located
-                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/visual/ajax-XHR-calls-and-gRPC-with-protobuf"> here </a>
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf"> here </a>
                             </p>
                         <?php }
                         // For the index.php page
@@ -269,23 +269,23 @@
                                 }
                                 else if ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server")
                                 {
-                                    include("interaction/my-frontend-and-backend-api-examples/ajax-XHR-calls-browser-to-web-server.php");
+                                    include("browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server/narrow_picture_container.php");
                                 }
                                 else if ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser")
                                 {
-                                    include("building-blocks/ajax-XHR-calls-web-server-to-browser/ajax-XHR-calls-web-server-to-browser.php");
+                                    include("browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser/narrow_picture_container.php");
                                 }
                                 else if ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server")
                                 {
-                                    include("interaction/gRPC-with-protobuf-web-server-to-backend-server/gRPC-with-protobuf-web-server-to-backend-server.php");
+                                    include("web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server/narrow_picture_container.php");
                                 }
                                 else if ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server")
                                 {
-                                    include("visual/gRPC-with-protobuf-backend-server-to-web-server/gRPC-with-protobuf-backend-server-to-web-server.php");
+                                    include("web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server/narrow_picture_container.php");
                                 }
                                 else if ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf")
                                 {
-                                    include("visual/ajax-XHR-calls-and-gRPC-with-protobuf/ajax-XHR-calls-and-gRPC-with-protobuf.php");
+                                    include("browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf/narrow_picture_container.php");
                                 }
                             }
                             // NOT IN WHITELIST - Page does not exist - Just give a 404 error
