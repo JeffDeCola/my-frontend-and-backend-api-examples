@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* ajax-XHR-calls-browser-to-web-server.CSS */
+
+/* #################### WRAPPER AND HEADER ########################### */
+
+#ajax-XHR-calls-browser-to-web-server_wrapper {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* ####################### PICTURE  ################ */
+
+#picture_container {
+
+    width: 80%;
+    text-align:center;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom:40px;
+    width:70%;
+}

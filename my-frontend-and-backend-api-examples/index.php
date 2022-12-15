@@ -73,7 +73,7 @@
     <link rel="stylesheet" type="text/css" href="../css/reset.css?v=<?php echo date('his'); ?>"/>
     <link rel="stylesheet" type="text/css" href="../css/template.css?v=<?php echo date('his'); ?>"/>
     <link rel="stylesheet" type="text/css" href="../css/wrappers.css?v=<?php echo date('his'); ?>"/>
-    <link rel="stylesheet" type="text/css" href="../css/APIs.css?v=<?php echo date('his'); ?>"/>
+    <link rel="stylesheet" type="text/css" href="../css/containers.css?v=<?php echo date('his'); ?>"/>
     <link rel="stylesheet" type="text/css" href="css/api.css?v=<?php echo date('his'); ?>"/>
 
     <!-- GOOGLE FONT -->
@@ -106,7 +106,7 @@
 
             <h2 class="hidden"> HEADER </h2>
 
-            <h1> MY API EXAMPLES </h1>
+            <h1> MY FRONTEND AND BACKEND API EXAMPLES </h1>
 
             <!-- <div id="header_container">
                 <p> tbd </p>
@@ -125,11 +125,11 @@
 
              <div id="nav_container">
                 <ul>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server"> ajax-XHR-calls-browser-to-web-server </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-web-server-to-browser"> ajax-XHR-calls-web-server-to-browser </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-web-server-to-backend-server"> gRPC-with-protobuf-web-server-to-backend-server </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-backend-server-to-web-server"> gRPC-with-protobuf-backend-server-to-web-server </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-and-gRPC-with-protobuf"> ajax-XHR-calls-and-gRPC-with-protobuf </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server"> ajax XHR calls (Browser to Web Server) </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-web-server-to-browser"> ajax XHR calls (Web Server to Browser) </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-web-server-to-backend-server"> gRPC with protobuf (Web Server to Backend Server) </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-backend-server-to-web-server"> gRPC with protobuf (Backend Server to Web Server) </a> </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-and-gRPC-with-protobuf"> ajax XHR calls and gRPC with protobuf (Browser to Web Server to Backend Server) </a> </li>
                     <br />
                     <li><a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples"> ALL CODE ON MY GITHUB REPO </a> </li>
                     <li><a href="http://www.jeffdecola.com"> HOME </a> </li>
@@ -156,15 +156,18 @@
                             <p> CHOOSE AN API EXAMPLE ABOVE </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server") { ?>
-                            <h2> USING ajax XHR calls FROM A BROWSER TO A WEB SERVER </h2>
-                            <p> The API will use an <b> ajax XHR call </b>
+                            <h2> USING AJAX XHR CALLS </h2>
+                            <h3> FROM A BROWSER TO A WEB SERVER </h3>
+                            <p> The API will use an ajax XHR call
                                 written in javascript and php.
-                                Two numbers will be
+                            </p>
+                            <p> Two numbers will be
                                 sent from a browser (client)
                                 to a web server (server)
                                 that will calculate
                                 and return the sum.
-                                A webpage will be used to
+                            </p>
+                            <p> A webpage will be used to
                                 enter the data and
                                 display the roundtrip results.
                             </p>
@@ -173,14 +176,17 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser") { ?>
-                            <h2> USING ajax XHR calls FROM A WEB SERVER TO A BROWSER </h2>
-                            <p> The API will use an <b> ajax XHR call </b>
+                            <h2> USING AJAX XHR CALLS </h2>
+                            <h3> FROM A WEB SERVER TO A BROWSER </h3>
+                            <p> The API will use an ajax XHR call
                                 written in javascript and php.
-                                A ?????? will be
+                            </p>
+                            <p> A ?????? will be
                                 sent from a web server (client)
                                 to a browser (server)
                                 that will return an acknowledgment.
-                                A webpage will be used to
+                            </p>
+                            <p> A webpage will be used to
                                 display the ????.
                             </p>
                             <p> Code located
@@ -188,10 +194,12 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server") { ?>
-                            <h2> USING gRPC with protobuf FROM A WEB SERVER TO A BACKEND SERVER </h2>
-                            <p> The API will use an <b> gRPC with protobuf </b>
+                            <h2> USING gRPC WITH PROTOBUF </h2>
+                            <h3> FROM A WEB SERVER TO A BACKEND SERVER </h3>
+                            <p> The API will use an gRPC with protobuf
                                 written in php and go.
-                                Two numbers will be
+                            </p>
+                            <p> Two numbers will be
                                 sent from a web server (client)
                                 to a backend server (server)
                                 that will calculate
@@ -202,10 +210,12 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server") { ?>
-                            <h2> USING gRPC with protobuf FROM A BACKEND SERVER TO A WEB SERVER </h2>
-                            <p> The API will use an <p> gRPC with protobuf </p>
+                            <h2> USING gRPC WITH PROTOBUF </h2>
+                            <h3> FROM A BACKEND SERVER TO A WEB SERVER </h3>
+                            <p> The API will use an gRPC with protobuf
                                 written in go and php.
-                                A ?????? will be
+                            </p>
+                            <p> A ?????? will be
                                 sent from a backend server (client)
                                 to a web server (server)
                                 that will return an acknowledgment.
@@ -215,20 +225,24 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf") { ?>
-                            <h2> USING ajax XHR calls FROM A BROWSER TO A WEB SERVER & USING gRPC with protobuf FROM A WEB SERVER TO A BACKEND SERVER </h2>
-                            <p> The API will use an <b> ajax XHR call </b>
+                            <h2> USING AJAX XHR calls </h2>
+                            <h3> FROM A BROWSER TO A WEB SERVER & USING gRPC with protobuf FROM A WEB SERVER TO A BACKEND SERVER </h3>
+                            <p> The API will use an ajax XHR call
                                 written in javascript and php
-                                and <b> gRPC with protobuf </b>
+                                and gRPC with protobuf
                                 written in go and php.
-                                Two numbers will be
+                            </p>
+                            <p> Two numbers will be
                                 sent from a browser (client)
                                 to a web server (server).
-                                Two numbers will then be
+                            </p>
+                            <p> Two numbers will then be
                                 sent from the web server (client)
                                 to a backend server (server)
                                 that will calculate
                                 and return the sum.
-                                A webpage will be used to
+                            </p>
+                            <p> A webpage will be used to
                                 enter the data and
                                 display the roundtrip results.
                             </p>
@@ -269,23 +283,23 @@
                                 }
                                 else if ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server")
                                 {
-                                    include("browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server/narrow_picture_container.php");
+                                    include("browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server/ajax-XHR-calls-browser-to-web-server.php");
                                 }
                                 else if ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser")
                                 {
-                                    include("browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser/narrow_picture_container.php");
+                                    include("browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser/ajax-XHR-calls-web-server-to-browser.php");
                                 }
                                 else if ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server")
                                 {
-                                    include("web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server/narrow_picture_container.php");
+                                    include("web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server/gRPC-with-protobuf-web-server-to-backend-server.php");
                                 }
                                 else if ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server")
                                 {
-                                    include("web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server/narrow_picture_container.php");
+                                    include("web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server/gRPC-with-protobuf-backend-server-to-web-server.php");
                                 }
                                 else if ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf")
                                 {
-                                    include("browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf/narrow_picture_container.php");
+                                    include("browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf/ajax-XHR-calls-and-gRPC-with-protobuf.php");
                                 }
                             }
                             // NOT IN WHITELIST - Page does not exist - Just give a 404 error

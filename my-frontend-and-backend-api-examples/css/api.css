@@ -41,6 +41,10 @@
     color: #FFFFFF;
 }
 
+.container_header_container h3 {
+    color: #FFFFFF;
+}
+
 .container_header_container a:link, .container_header_container a:visited  {
     color: #9ebcff;
 }
