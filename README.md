@@ -22,8 +22,8 @@ _built with
 
 ## FRONTEND AND BACKEND API EXAMPLES
 
-A frontend consists of a browser.  The backend may consist of a
-web server and/or a backend server.
+The **frontend** consists of a browser.  The **backend** may consist of a
+web server and/or a backend server. Lets have them talk to each other.
 
 ![IMAGE - frontend-backend-overview - IMAGE](docs/pics/frontend-backend-overview.jpg)
 
