@@ -8,7 +8,7 @@
 
 <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php
@@ -82,8 +82,8 @@
 
     <!-- JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jqs/custom.js"></script>
-    <script type="text/javascript" src="jqs/js.cookie.js"></script>
+    <script type="text/javascript" src="../jqs/custom.js"></script>
+    <script type="text/javascript" src="../jqs/js.cookie.js"></script>
     
     <!-- GOOGLE ANALYTICS -->
 

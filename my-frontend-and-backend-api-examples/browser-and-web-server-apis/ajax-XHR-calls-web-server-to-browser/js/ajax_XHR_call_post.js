@@ -1,46 +1,20 @@
-# ajax-XHR-calls-browser-to-web-server
+// ajax_post_generate_nft.js
+// XHR AJAX CALL "POST"
+// SEND DATA (JSON FORMAT) TO THE SERVERS PHP FILE
+// USING XHR AJAX JSON "POST"
+// There are other methods to use ajax, we are using XHR Calls
 
-  _The API will use an **ajax XHR call**
-  written in javascript and php.
-  Two numbers will be
-  sent from a browser (client)
-  to a web server (server)
-  that will calculate
-  and return the sum.
-  A webpage will be used to
-  enter the data and
-  display the roundtrip results._
-  
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server)
+var XHRPostAttributes;
+var serverData;
+var serverResponse = false; 
+var serverError = false;
 
-## OVERVIEW
+// -----------------------------------------------------------------------------------------------------------------------
+// SEND ATTRIBUTES TO SERVER
+// "POST"/SEND DATA TO SERVER - RUN PHP FILE ON SERVER - GET RESPONSE
+// This will update serverData
+// PART 1
 
-![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../../docs/pics/ajax-XHR-calls-browser-to-web-server.jpg)
-
-## CODE
-
-### THE JAVASCRIPT TO GET THE DATA
-
-```js
-    // GATHER ALL OPERANDS FROM INPUT 
-    operand1 = document.getElementById('operand_1_input_field').value;
-    operand2 = document.getElementById('operand_2_input_field').value;
-
-    // SEND ATTRIBUTES TO SERVER
-    // "POST"/SEND DATA TO SERVER - RUN PHP FILE ON SERVER - GET RESPONSE
-    // This will update serverData
-    postDataToServer(operand1, operand2);
-
-    ... wait for response from server ...
-
-    // GET RESULTS
-    sum=serverData.sum;
-
-```
-
-### THE FUNCTIONS TO SEND TO SERVER
-
-```js
 // NEW REQUESTS
 XHRPostAttributes = new XMLHttpRequest();
 if (!XHRPostAttributes) {
@@ -99,28 +73,3 @@ function postDataResponseFromServer() {
         serverError = true;
     }
 }
-```
-
-### THE PHP CODE ON THE WEB SERVER
-
-```php
-    // From the user sending data to this server
-    // Response will be in json format
-    // The javascript reads this every few seconds.
-
-    // GET THE JSON DATA FROM THE USER
-    header("Content-Type: application/json");
-    $attributesJSON = json_decode(file_get_contents("php://input"));
-
-    // UN PARSE IT
-    $operand1 = $attributesJSON->operand1;
-    $operand2 = $attributesJSON->operand2;
-
-    // DO SOMETHING
-    $sum = (float)$operand1 + (float)$operand2;
-    sleep(2);
-
-    // RESPONSE
-    $array = ['sum'=>$sum];
-    echo json_encode($array);
-```
