@@ -10,6 +10,7 @@ Table of Contents,
 
 * [BROWSER & WEB SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser--web-server-apis)
 * [WEB SERVER & BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#web-server--backend-server-apis)
+* [BACKEND SERVER & BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#backend-server--backend-server-apis)
 * [BROWSER, WEB SERVER & BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser-web-server--backend-server-apis)
 
 Documentation and reference,
@@ -22,8 +23,9 @@ _built with
 
 ## FRONTEND AND BACKEND API EXAMPLES
 
-The **frontend** consists of a browser.  The **backend** may consist of a
-web server and/or a backend server. Lets have them talk to each other.
+The **frontend** consists of a browser.
+The **backend** may consist of a web server and/or a backend server(s).
+Lets figure out how they can talk with each other.
 
 ![IMAGE - frontend-backend-overview - IMAGE](docs/pics/frontend-backend-overview.jpg)
 
@@ -73,6 +75,10 @@ web server and/or a backend server. Lets have them talk to each other.
   sent from a backend server (client)
   to a web server (server)
   that will return an acknowledgment._
+
+### BACKEND SERVER & BACKEND SERVER APIs
+
+* _coming soon_
 
 ### BROWSER, WEB SERVER & BACKEND SERVER APIs
 
