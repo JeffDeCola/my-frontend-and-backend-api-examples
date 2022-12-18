@@ -8,10 +8,10 @@ _A place to keep my frontend and backend API examples._
 
 Table of Contents,
 
-* [BROWSER & WEB SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser--web-server-apis)
-* [WEB SERVER & BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#web-server--backend-server-apis)
-* [BACKEND SERVER & BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#backend-server--backend-server-apis)
-* [BROWSER, WEB SERVER & BACKEND SERVER APIs](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser-web-server--backend-server-apis)
+* [FRONTEND AND BACKEND API EXAMPLES](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#frontend-and-backend-api-examples)
+* [BROWSER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser-as-a-client)
+* [WEB SERVER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#web-server-as-a-client)
+* [BACKEND SERVER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#backend-server-as-a-client)
 
 Documentation and reference,
 
@@ -23,55 +23,78 @@ _built with
 
 ## FRONTEND AND BACKEND API EXAMPLES
 
-The **frontend** consists of a browser.
+The **frontend** usually consists of a browser.
 The **backend** may consist of a web server and/or a backend server(s).
 Lets figure out how they can talk with each other.
 
 ![IMAGE - frontend-backend-overview - IMAGE](docs/pics/frontend-backend-overview.jpg)
 
-### BROWSER & WEB SERVER APIs
+## BROWSER AS A CLIENT
 
-* [ajax-XHR-calls-browser-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server)
+* [get-data-from-web-sever-to-browser-using-ajax-xhr-get-call]()
 
-  _Send Data
-  from a Browser to a Web Server.
-  The API will use an **Ajax XMLHttpRequest (XHR) POST call**
+  _**GET** data
+  from a Web Server
+  to a Browser.
+  The API will use an **Ajax XMLHttpRequest (XHR) GET Call**
   written in javascript and php._
 
-* [ajax-XHR-calls-web-server-to-browser](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser)
+* [send-data-from-brower-to-web-server-using-ajax-xhr-post-call]()
 
-  _Get Data
-  from a Web Server to a Browser.
-  The API will use an **Ajax XMLHttpRequest (XHR) GET call**
+  _**SEND** data
+  from a Browser
+  to a Web Server.
+  The API will use an **Ajax XMLHttpRequest (XHR) POST Call**
   written in javascript and php._
 
-### WEB SERVER & BACKEND SERVER APIs
+## WEB SERVER AS A CLIENT
 
-* [gRPC-with-protobuf-web-server-to-backend-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server)
+* [get-data-from-backend-sever-to-web-server-using-grpc-with-protobuf]()
 
-  _Send Data
-  from a Web Server to a Backend Server.
-  The API will use an **gRPC with protobuf**
+  _**GET** data
+  from a Backend Server
+  to a Web Server.
+  The API will use **gRPC with protobuf**
   written in php and go._
 
-* [gRPC-with-protobuf-backend-server-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server)
+* [send-data-from-web-sever-to-backend-server-using-grpc-with-protobuf]()
 
-  _Send Data
-  from a Backend Server to a Web Server.
-  The API will use an **gRPC with protobuf**
-  written in go and php._
+  _**SEND** data
+  from a Web Server
+  to a Backend Server.
+  The API will use **gRPC with protobuf**
+  written in php and go._
 
-### BACKEND SERVER & BACKEND SERVER APIs
+## BACKEND SERVER AS A CLIENT
 
-* _coming soon_
+* [get-data-from-backend-sever-to-backend-server-using-grpc-with-protobuf]()
 
-### BROWSER, WEB SERVER & BACKEND SERVER APIs
+  _**GET** data
+  from a Backend Server
+  to a Backend Server.
+  The API will use **gRPC with protobuf**
+  written in php and go._
 
-* [ajax-XHR-calls-and-gRPC-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf)
+  * [get-data-from-web-sever-to-backend-server-using-grpc-with-protobuf]()
 
-  _Send Data
-  from a Browser to a Web Server to a Backend Server.
-  The API will use an **Ajax XMLHttpRequest (XHR) call**
-  written in javascript and php
-  and **gRPC with protobuf**
+  _**GET** data
+  from a Web Server
+  to a Backend Server.
+  The API will use **gRPC with protobuf**
+  written in php and go._
+
+* [send-data-from-backend-sever-to-backend-server-using-grpc-with-protobuf]()
+
+  _**SEND** data
+  from a Backend Server
+  to a Backend Server.
+  The API will use **gRPC with protobuf**
+  written in php and go._
+
+* [send-data-from-backend-sever-to-web-server-using-grpc-with-protobuf]()
+
+  _**SEND** data
+  from a Backend Server
+  to a Web Server.
+  The API will use **gRPC with protobuf**
   written in php and go._

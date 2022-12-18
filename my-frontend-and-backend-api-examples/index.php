@@ -221,6 +221,21 @@
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server"> here </a>
                             </p>
                         <?php }
+                        elseif ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-backend-server") { ?>
+                            <h2> SEND DATA FROM A BACKEND SERVER TO A BACKEND SERVER </h2>
+                            <h3> The API will use gRPC with protobuf
+                                 written in go.
+                            </h3>
+                            <p> Two numbers will be
+                                sent from a backend server (client)
+                                to a backend server (server)
+                                that will calculate
+                                and return the sum.
+                            </p>
+                            <p> Code located
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-backend-server"> here </a>
+                            </p>
+                        <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf") { ?>
                             <h2> SEND DATA FROM A BROWSER TO A WEB SERVER TO A BACKEND SERVER</h2>
                             <h3> The API will use an Ajax XMLHttpRequest (XHR) POST call
