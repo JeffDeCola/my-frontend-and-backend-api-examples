@@ -1,15 +1,8 @@
-# SEND POST REQUEST USING XMLHttpRequest (XHR)
+# SEND DATA USING AN XMLHttpRequest (XHR) POST CALL
 
-  _The API will use an **ajax XMLHttpRequest (XHR) call**
-  written in javascript and php.
-  Two numbers will be
-  sent from a browser (client)
-  to a web server (server)
-  that will calculate
-  and return the sum.
-  A webpage will be used to
-  enter the data and
-  display the roundtrip results._
+_Send data from a Browser to a Web Server.
+The API will use an **Ajax XMLHttpRequest (XHR) POST call**
+written in javascript and php._
   
 [See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server)
 
@@ -24,9 +17,18 @@ browser and a server.
 
 ## CODE
 
+Two numbers will be
+sent from a browser (client)
+to a web server (server)
+that will calculate
+and return the sum.
+A webpage will be used to
+enter the data and
+display the roundtrip results.
+
 ### GET USER DATA
 
-The javascript looks like this,
+Javascript,
 
 ```js
 // GATHER ALL OPERANDS FROM INPUT 
@@ -37,9 +39,9 @@ operand2 = document.getElementById('operand_2_input_field').value;
 postDataToServer(operand1, operand2);
 ```
 
-### SEND POST REQUEST USING XMLHttpRequest (XHR)
+### SEND DATA USING XMLHttpRequest (XHR) POST CALL
 
-The javascript looks like this,
+Javascript,
 
 ```js
 // NEW REQUESTS
@@ -64,7 +66,7 @@ function postDataToServer(Operand1, Operand2) {
 }
 ```
 
-### THE PHP CODE ON THE WEB SERVER
+### RECEIVE DATA ON THE WEB SERVER
 
 ```php
 

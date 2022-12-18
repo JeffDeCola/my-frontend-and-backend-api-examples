@@ -33,48 +33,37 @@ Lets figure out how they can talk with each other.
 
 * [ajax-XHR-calls-browser-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server)
 
-  _The API will use an **ajax XMLHttpRequest (XHR) call**
-  written in javascript and php.
-  Two numbers will be
-  sent from a browser (client)
-  to a web server (server)
-  that will calculate
-  and return the sum.
-  A webpage will be used to
-  enter the data and
-  display the roundtrip results._
+  _Send Data
+  from a Browser to a Web Server._
+
+  _The API will use an **Ajax XMLHttpRequest (XHR) POST call**
+  written in javascript and php._
 
 * [ajax-XHR-calls-web-server-to-browser](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser)
 
-  _The API will use an **ajax XMLHttpRequest (XHR) call**
-  written in javascript and php.
-  A ?????? will be
-  sent from a web server (client)
-  to a browser (server)
-  that will return an acknowledgment.
-  A webpage will be used to
-  display the ????._
+  _Get Data
+  from a Web Server to a Browser._
+
+  _The API will use an **Ajax XMLHttpRequest (XHR) GET call**
+  written in javascript and php._
 
 ### WEB SERVER & BACKEND SERVER APIs
 
 * [gRPC-with-protobuf-web-server-to-backend-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-web-server-to-backend-server)
 
+  _Send Data
+  from a Web Server to a Backend Server._
+
   _The API will use an **gRPC with protobuf**
-  written in php and go.
-  Two numbers will be
-  sent from a web server (client)
-  to a backend server (server)
-  that will calculate
-  and return the sum._
+  written in php and go._
 
 * [gRPC-with-protobuf-backend-server-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server)
 
+  _Send Data
+  from a Backend Server to a Web Server._
+
   _The API will use an **gRPC with protobuf**
-  written in go and php.
-  A ?????? will be
-  sent from a backend server (client)
-  to a web server (server)
-  that will return an acknowledgment._
+  written in go and php._
 
 ### BACKEND SERVER & BACKEND SERVER APIs
 
@@ -84,18 +73,10 @@ Lets figure out how they can talk with each other.
 
 * [ajax-XHR-calls-and-gRPC-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf)
 
-  _The API will use an **ajax XMLHttpRequest (XHR) call**
+  _Send Data
+  from a Browser to a Web Server to a Backend Server._
+
+  _The API will use an **Ajax XMLHttpRequest (XHR) call**
   written in javascript and php
   and **gRPC with protobuf**
-  written in go and php.
-  Two numbers will be
-  sent from a browser (client)
-  to a web server (server).
-  Two numbers will then be
-  sent from the web server (client)
-  to a backend server (server)
-  that will calculate
-  and return the sum.
-  A webpage will be used to
-  enter the data and
-  display the roundtrip results._
+  written in php and go._
