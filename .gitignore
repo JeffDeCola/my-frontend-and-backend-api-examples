@@ -11,7 +11,7 @@ coverage.out
 .DS_Store
 
 # Windows
-.jpg:Zone.Identifier
+*Zone.Identifier
 
 # DREAMWAVER
 dwsync.xml
