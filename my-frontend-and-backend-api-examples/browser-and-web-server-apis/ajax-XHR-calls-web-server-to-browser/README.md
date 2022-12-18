@@ -17,7 +17,7 @@ browser and a server.
 
 ## CODE
 
-A Request will be
+A request will be
 sent from a browser (client)
 to a web server (server)
 that will return the current time.
@@ -26,18 +26,71 @@ display this time.
 
 ### GET DATA USING XMLHttpRequest (XHR) GET CALL
 
-Javascript,
+Call this javascript every time you want to get data from the server,
 
 ```js
+function get_data_from_web_server() {
 
-//tbd
+    // CREATE A NEW REQUEST
+    getRequest = new XMLHttpRequest();
+        if (!getRequest) {
+        console.warn("Giving up :( Cannot create an XMLHTTP instance");
+    }
+    
+    // OPEN CONNECTION - CREATE GET REQUEST
+    // true means DON'T BLOCK
+    getRequest.open('GET', url, true);
 
+    // SEND JSON FORMAT
+    getRequest.setRequestHeader('Content-Type', 'application/json');
+    getRequest.send();
+
+    // LISTEN AND KICK OFF FUNCTION WHEN READY
+    getRequest.onreadystatechange = function() {
+
+        // CHECK IF IT'S DONE
+        try {
+            if (getRequest.readyState === XMLHttpRequest.DONE) {
+
+                if (getRequest.status === 200) {
+
+                    // THE MAGIC HAPPENS HERE *******************************************
+                    // RECEIVE JSON FORMAT
+                    serverData = JSON.parse(getRequest.responseText);
+                    show_data(serverData.data);
+
+                } else {
+                    console.warn("There was an issue getting data to the server");
+                    serverError = true;
+                }
+            }
+        }
+        // WHEN THE SERVER IS DOWN
+        catch( e ) {
+            console.warn("There was an issue getting data to the server: Caught Server Exception:" + e.description);
+            serverError = true;
+            server_error();
+        }
+
+    }
+}
 ```
 
 ### SEND DATA FROM THE WEB SERVER
 
 ```php
+// DO SOMETHING
+$hour = date("h");
+$minute = date("i");
+$second = date("s");
 
-//tbd
+// BUILD ARRAY
+$dataArray = [
+    'hour'=>$hour,
+    'minute'=>$minute,
+    'second'=>$second,
+];
 
+// SEND IT TO THE BROWSER
+echo json_encode($dataArray);
 ```

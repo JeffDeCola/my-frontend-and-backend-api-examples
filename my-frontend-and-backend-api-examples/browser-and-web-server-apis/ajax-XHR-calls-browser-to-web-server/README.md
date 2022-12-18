@@ -35,49 +35,89 @@ Javascript,
 operand1 = document.getElementById('operand_1_input_field').value;
 operand2 = document.getElementById('operand_2_input_field').value;
 
-// SEND ATTRIBUTES TO SERVER
-postDataToServer(operand1, operand2);
+// SEND DATA TO SERVER
+send_data_to_web_server(operand1, operand2);
 ```
 
 ### SEND DATA USING XMLHttpRequest (XHR) POST CALL
 
-Javascript,
+Call this javascript every time you want to get send data to the server,
 
 ```js
-// NEW REQUESTS
-postRequest = new XMLHttpRequest();
+// -----------------------------------------------------------------------------------------------------------------------
+// SEND DATA TO WEB SERVER
+function send_data_to_web_server(operand1, operand2) {
 
-// SEND TO SERVER
-function postDataToServer(Operand1, Operand2) {
+    // CREATE A NEW REQUEST
+    postRequest = new XMLHttpRequest();
+        if (!postRequest) {
+        console.warn("Giving up :( Cannot create an XMLHTTP instance");
+    }
     
     // CONVERT JSON TO STRING
-    var dataJSONString = JSON.stringify({ 
-        "operand1": Operand1,
-        "operand2": Operand2});
+    var attributesJSONString = JSON.stringify({ 
+        "operand1": operand1,
+        "operand2": operand2
+    });
 
-    // OPEN CONNECTION - true means DON'T BLOCK
-    url = 'browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server/php_scripts/post_data_to_server.php';
+    // OPEN CONNECTION - CREATE GET REQUEST
+    // true means DON'T BLOCK
     postRequest.open('POST', url, true);
 
     // SEND JSON FORMAT
     postRequest.setRequestHeader('Content-Type', 'application/json');
-    postRequest.send(dataJSONString);
+    postRequest.send(attributesJSONString);
 
+    // LISTEN AND KICK OFF FUNCTION WHEN READY
+    postRequest.onreadystatechange = function() {
+
+        // CHECK IF IT'S DONE
+        try {
+            if (postRequest.readyState === XMLHttpRequest.DONE) {
+
+                if (postRequest.status === 200) {
+
+                    // THE MAGIC HAPPENS HERE *******************************************
+                    // RECEIVE JSON FORMAT
+                    serverData = JSON.parse(postRequest.responseText);
+                    show_data(serverData);
+
+                } else {
+                    console.warn("There was an issue getting data to the server");
+                    server_error();
+                }
+            }
+        }
+        // WHEN THE SERVER IS DOWN
+        catch( e ) {
+            console.warn("There was an issue getting data to the server: Caught Server Exception:" + e.description);
+            server_error();
+        }
+
+    }
 }
 ```
 
-### RECEIVE DATA ON THE WEB SERVER
+### RECEIVE DATA ON THE WEB SERVER & RESPOND
 
 ```php
+// GET THE JSON DATA FROM THE USER
+header("Content-Type: application/json");
+$attributesJSON = json_decode(file_get_contents("php://input"));
 
-    // GET THE JSON DATA FROM THE USER
-    header("Content-Type: application/json");
-    $attributesJSON = json_decode(file_get_contents("php://input"));
+// UN PARSE IT
+$operand1 = $attributesJSON->operand1;
+$operand2 = $attributesJSON->operand2;
 
-    // UN PARSE IT
-    $operand1 = $attributesJSON->operand1;
-    $operand2 = $attributesJSON->operand2;
+// DO SOMETHING
+$sum = (float)$operand1 + (float)$operand2;
+sleep(1);
 
-    // DO SOMETHING
+// BUILD ARRAY
+$array = [
+    'sum'=>$sum
+];
 
+// SEND IT TO THE BROWSER
+echo json_encode($array);
 ```
