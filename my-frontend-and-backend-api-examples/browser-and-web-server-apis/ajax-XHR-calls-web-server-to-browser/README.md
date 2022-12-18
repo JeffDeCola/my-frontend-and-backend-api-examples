@@ -4,7 +4,7 @@ _Get data from a Web Server to a Browser.
 The API will use an **Ajax XMLHttpRequest (XHR) GET call**
 written in javascript and php._
   
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server)
+[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-web-server-to-browser)
 
 ## XMLHttpRequest
 
@@ -13,7 +13,7 @@ The request sent by XMLHttpRequest can either be a GET or POST.
 Its methods provide the ability to send network requests between a
 browser and a server.
 
-![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../../docs/pics/ajax-XHR-calls-browser-to-web-server.jpg)
+![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../../docs/pics/ajax-XHR-calls-web-server-to-browser.jpg)
 
 ## CODE
 
