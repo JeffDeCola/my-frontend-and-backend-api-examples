@@ -1,6 +1,6 @@
-# ajax-XHR-calls-and-gRPC-with-protobuf
+# USING AJAX XMLHttpRequest (XHR) CALLS & gRPC WITH PROTOBUF
 
-_The API will use an **ajax XHR call**
+_The API will use an **ajax XMLHttpRequest (XHR) call**
 written in javascript and php
 and **gRPC with protobuf**
 written in go and php.

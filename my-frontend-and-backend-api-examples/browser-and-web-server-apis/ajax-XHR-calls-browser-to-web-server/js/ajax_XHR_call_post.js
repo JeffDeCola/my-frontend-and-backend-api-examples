@@ -1,28 +1,22 @@
-// ajax_post_generate_nft.js
-// XHR AJAX CALL "POST"
-// SEND DATA (JSON FORMAT) TO THE SERVERS PHP FILE
-// USING XHR AJAX JSON "POST"
+// ajax_XHR_calls_post.js
+// SEND POST REQUEST USING XMLHttpRequest (XHR)
 // There are other methods to use ajax, we are using XHR Calls
 
-var XHRPostAttributes;
+var postRequest;
 var serverData;
 var serverResponse = false; 
 var serverError = false;
 
-// -----------------------------------------------------------------------------------------------------------------------
-// SEND ATTRIBUTES TO SERVER
-// "POST"/SEND DATA TO SERVER - RUN PHP FILE ON SERVER - GET RESPONSE
-// This will update serverData
-// PART 1
+console.log("STARTING ajax_XHR_calls_post.js JAVASCRIPT");
 
-// NEW REQUESTS
-XHRPostAttributes = new XMLHttpRequest();
-if (!XHRPostAttributes) {
+// CREATE A NEW REQUEST
+postRequest = new XMLHttpRequest();
+if (!postRequest) {
     console.warn("Giving up :( Cannot create an XMLHTTP instance");
 }
 
-// LISTEN
-XHRPostAttributes.onreadystatechange = postDataResponseFromServer; 
+// -----------------------------------------------------------------------------------------------------------------------
+// SEND TO SERVER
 
 function postDataToServer(Operand1, Operand2) {
 
@@ -33,33 +27,38 @@ function postDataToServer(Operand1, Operand2) {
         "operand1": Operand1,
         "operand2": Operand2});
 
-    // OPEN CONNECTION - true means DON'T BLOCK
+    // OPEN CONNECTION - CREATE POST REQUEST
+    // true means DON'T BLOCK
     url = 'browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server/php_scripts/post_data_to_server.php';
-    XHRPostAttributes.open('POST', url, true);
+    postRequest.open('POST', url, true);
 
     // SEND JSON FORMAT
-    XHRPostAttributes.setRequestHeader('Content-Type', 'application/json');
-    XHRPostAttributes.send(attributesJSONString);
+    postRequest.setRequestHeader('Content-Type', 'application/json');
+    postRequest.send(attributesJSONString);
 
 }
 
-// "POST"/SEND DATA TO SERVER - RESPONSE FROM SERVER
-// PART 2
+// -----------------------------------------------------------------------------------------------------------------------
+// RESPONSE FROM SERVER
+
+// LISTEN AND KICK OFF FUNCTION WHEN READY
+postRequest.onreadystatechange = postDataResponseFromServer; 
+
 function postDataResponseFromServer() {
 
     console.log("postDataResponseFromServer: Get Data from Server");
 
     // IN CASE SERVER GOES DOWN
     try {
-        if (XHRPostAttributes.readyState === XMLHttpRequest.DONE) {
+        if (postRequest.readyState === XMLHttpRequest.DONE) {
 
-            if (XHRPostAttributes.status === 200) {
+            if (postRequest.status === 200) {
 
                 // THE MAGIC HAPPENS HERE *******************************************
                 // RECEIVE JSON FORMAT
-                serverData = JSON.parse(XHRPostAttributes.responseText);
+                serverData = JSON.parse(postRequest.responseText);
                 serverResponse = true;
-                console.warn("Got data from server");
+                console.log("Got data from server");
 
             } else {
                 console.warn("There was an issue sending data to the server");
