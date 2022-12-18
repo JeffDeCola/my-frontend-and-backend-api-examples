@@ -33,7 +33,7 @@ Lets figure out how they can talk with each other.
 
 * [ajax-XHR-calls-browser-to-web-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server)
 
-  _The API will use an **ajax XHR call**
+  _The API will use an **ajax XMLHttpRequest (XHR) call**
   written in javascript and php.
   Two numbers will be
   sent from a browser (client)
@@ -46,7 +46,7 @@ Lets figure out how they can talk with each other.
 
 * [ajax-XHR-calls-web-server-to-browser](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser)
 
-  _The API will use an **ajax XHR call**
+  _The API will use an **ajax XMLHttpRequest (XHR) call**
   written in javascript and php.
   A ?????? will be
   sent from a web server (client)
@@ -84,7 +84,7 @@ Lets figure out how they can talk with each other.
 
 * [ajax-XHR-calls-and-gRPC-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-web-server-and-backend-server-apis/ajax-XHR-calls-and-gRPC-with-protobuf)
 
-  _The API will use an **ajax XHR call**
+  _The API will use an **ajax XMLHttpRequest (XHR) call**
   written in javascript and php
   and **gRPC with protobuf**
   written in go and php.

@@ -156,9 +156,9 @@
                             <p> CHOOSE AN API EXAMPLE ABOVE </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server") { ?>
-                            <h2> USING AJAX XHR CALLS </h2>
+                            <h2> SEND POST REQUEST USING XMLHttpRequest (XHR) </h2>
                             <h3> FROM A BROWSER TO A WEB SERVER </h3>
-                            <p> The API will use an ajax XHR call
+                            <p> The API will use an ajax XMLHttpRequest (XHR) call
                                 written in javascript and php.
                             </p>
                             <p> Two numbers will be
@@ -176,9 +176,9 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser") { ?>
-                            <h2> USING AJAX XHR CALLS </h2>
+                            <h2> GET REQUEST USING XMLHttpRequest (XHR) </h2>
                             <h3> FROM A WEB SERVER TO A BROWSER </h3>
-                            <p> The API will use an ajax XHR call
+                            <p> The API will use an ajax XMLHttpRequest (XHR) call
                                 written in javascript and php.
                             </p>
                             <p> A ?????? will be
@@ -225,9 +225,9 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf") { ?>
-                            <h2> USING AJAX XHR calls </h2>
-                            <h3> FROM A BROWSER TO A WEB SERVER & USING gRPC with protobuf FROM A WEB SERVER TO A BACKEND SERVER </h3>
-                            <p> The API will use an ajax XHR call
+                            <h2> USING AJAX XMLHttpRequest (XHR) CALLS & gRPC WITH PROTOBUF </h2>
+                            <h3> FROM A BROWSER TO A WEB SERVER TO A BACKEND SERVER </h3>
+                            <p> The API will use an ajax XMLHttpRequest (XHR) call
                                 written in javascript and php
                                 and gRPC with protobuf
                                 written in go and php.

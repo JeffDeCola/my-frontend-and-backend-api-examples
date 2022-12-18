@@ -21,7 +21,7 @@ var white = "#ffffff";
 var black = "#000000";
 var red = "#ff0000";
 
-console.log("STARTING JAVASCRIPT");
+console.log("STARTING addition.js JAVASCRIPT");
 
 // RESET ------------------------------------------------------------------------------------------------
 
@@ -106,7 +106,7 @@ function completed_operands() {
 function add_button_onmouseover() {
     switch(state) {
         case "start":
-            document.getElementById("add_button_text").innerHTML="FILL OUT OPERANDS";
+            document.getElementById("add_button_text").innerHTML="FILL IN OPERANDS";
             document.getElementById("add_button_push").style.backgroundColor=grey;
             break;
         case "completed_operands":

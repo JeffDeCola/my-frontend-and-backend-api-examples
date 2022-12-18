@@ -1,6 +1,6 @@
-# ajax-XHR-calls-browser-to-web-server
+# SEND POST REQUEST USING XMLHttpRequest (XHR)
 
-  _The API will use an **ajax XHR call**
+  _The API will use an **ajax XMLHttpRequest (XHR) call**
   written in javascript and php.
   Two numbers will be
   sent from a browser (client)
@@ -13,100 +13,60 @@
   
 [See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server)
 
-## OVERVIEW
+## XMLHttpRequest
+
+XMLHttpRequest (XHR) is a JavaScript API to create AJAX requests.
+The request sent by XMLHttpRequest can either be a GET or POST.
+Its methods provide the ability to send network requests between a
+browser and a server.
 
 ![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../../docs/pics/ajax-XHR-calls-browser-to-web-server.jpg)
 
 ## CODE
 
-### THE JAVASCRIPT TO GET THE DATA
+### GET USER DATA
+
+The javascript looks like this,
 
 ```js
-    // GATHER ALL OPERANDS FROM INPUT 
-    operand1 = document.getElementById('operand_1_input_field').value;
-    operand2 = document.getElementById('operand_2_input_field').value;
+// GATHER ALL OPERANDS FROM INPUT 
+operand1 = document.getElementById('operand_1_input_field').value;
+operand2 = document.getElementById('operand_2_input_field').value;
 
-    // SEND ATTRIBUTES TO SERVER
-    // "POST"/SEND DATA TO SERVER - RUN PHP FILE ON SERVER - GET RESPONSE
-    // This will update serverData
-    postDataToServer(operand1, operand2);
-
-    ... wait for response from server ...
-
-    // GET RESULTS
-    sum=serverData.sum;
-
+// SEND ATTRIBUTES TO SERVER
+postDataToServer(operand1, operand2);
 ```
 
-### THE FUNCTIONS TO SEND TO SERVER
+### SEND POST REQUEST USING XMLHttpRequest (XHR)
+
+The javascript looks like this,
 
 ```js
 // NEW REQUESTS
-XHRPostAttributes = new XMLHttpRequest();
-if (!XHRPostAttributes) {
-    console.warn("Giving up :( Cannot create an XMLHTTP instance");
-}
+postRequest = new XMLHttpRequest();
 
-// LISTEN
-XHRPostAttributes.onreadystatechange = postDataResponseFromServer; 
-
+// SEND TO SERVER
 function postDataToServer(Operand1, Operand2) {
-
-    console.log("postDataToServer: Send Data to Server");
     
     // CONVERT JSON TO STRING
-    var attributesJSONString = JSON.stringify({ 
+    var dataJSONString = JSON.stringify({ 
         "operand1": Operand1,
         "operand2": Operand2});
 
     // OPEN CONNECTION - true means DON'T BLOCK
     url = 'browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server/php_scripts/post_data_to_server.php';
-    XHRPostAttributes.open('POST', url, true);
+    postRequest.open('POST', url, true);
 
     // SEND JSON FORMAT
-    XHRPostAttributes.setRequestHeader('Content-Type', 'application/json');
-    XHRPostAttributes.send(attributesJSONString);
+    postRequest.setRequestHeader('Content-Type', 'application/json');
+    postRequest.send(dataJSONString);
 
-}
-
-// "POST"/SEND DATA TO SERVER - RESPONSE FROM SERVER
-// PART 2
-function postDataResponseFromServer() {
-
-    console.log("postDataResponseFromServer: Get Data from Server");
-
-    // IN CASE SERVER GOES DOWN
-    try {
-        if (XHRPostAttributes.readyState === XMLHttpRequest.DONE) {
-
-            if (XHRPostAttributes.status === 200) {
-
-                // THE MAGIC HAPPENS HERE *******************************************
-                // RECEIVE JSON FORMAT
-                serverData = JSON.parse(XHRPostAttributes.responseText);
-                serverResponse = true;
-                console.warn("Got data from server");
-
-            } else {
-                console.warn("There was an issue sending data to the server");
-                serverError = true;
-            }
-        }
-    }
-    // WHEN THE SERVER IS DOWN
-    catch( e ) {
-        console.warn("There was an issue sending data to the server: Caught Server Exception:" + e.description);
-        serverError = true;
-    }
 }
 ```
 
 ### THE PHP CODE ON THE WEB SERVER
 
 ```php
-    // From the user sending data to this server
-    // Response will be in json format
-    // The javascript reads this every few seconds.
 
     // GET THE JSON DATA FROM THE USER
     header("Content-Type: application/json");
@@ -117,10 +77,5 @@ function postDataResponseFromServer() {
     $operand2 = $attributesJSON->operand2;
 
     // DO SOMETHING
-    $sum = (float)$operand1 + (float)$operand2;
-    sleep(2);
 
-    // RESPONSE
-    $array = ['sum'=>$sum];
-    echo json_encode($array);
 ```
