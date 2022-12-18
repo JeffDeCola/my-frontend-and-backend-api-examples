@@ -156,11 +156,10 @@
                             <p> CHOOSE AN API EXAMPLE ABOVE </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-browser-to-web-server") { ?>
-                            <h2> SEND POST REQUEST USING XMLHttpRequest (XHR) </h2>
-                            <h3> FROM A BROWSER TO A WEB SERVER </h3>
-                            <p> The API will use an ajax XMLHttpRequest (XHR) call
-                                written in javascript and php.
-                            </p>
+                            <h2> SEND DATA FROM A BROWSER TO A WEB SERVER </h2>
+                            <h3> The API will use an Ajax XMLHttpRequest (XHR) POST call
+                                 written in javascript and php.
+                            </h3>
                             <p> Two numbers will be
                                 sent from a browser (client)
                                 to a web server (server)
@@ -176,29 +175,27 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-web-server-to-browser") { ?>
-                            <h2> GET REQUEST USING XMLHttpRequest (XHR) </h2>
-                            <h3> FROM A WEB SERVER TO A BROWSER </h3>
-                            <p> The API will use an ajax XMLHttpRequest (XHR) call
-                                written in javascript and php.
-                            </p>
-                            <p> A ?????? will be
-                                sent from a web server (client)
-                                to a browser (server)
-                                that will return an acknowledgment.
+                            <h2> GET DATA FROM A WEB SERVER TO A BROWSER </h2>
+                            <h3> The API will use an Ajax XMLHttpRequest (XHR) GET call
+                                 written in javascript and php.
+                            </h3>
+                            <p> A Request will be
+                                sent from a browser (client)
+                                to a web server (server)
+                                that will return the current time.
                             </p>
                             <p> A webpage will be used to
-                                display the ????.
+                                display this time.
                             </p>
                             <p> Code located
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser"> here </a>
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "gRPC-with-protobuf-web-server-to-backend-server") { ?>
-                            <h2> USING gRPC WITH PROTOBUF </h2>
-                            <h3> FROM A WEB SERVER TO A BACKEND SERVER </h3>
-                            <p> The API will use an gRPC with protobuf
-                                written in php and go.
-                            </p>
+                            <h2> SEND DATA FROM A WEB SERVER TO A BACKEND SERVER </h2>
+                            <h3> The API will use gRPC with protobuf
+                                 written in php and go.
+                            </h3>
                             <p> Two numbers will be
                                 sent from a web server (client)
                                 to a backend server (server)
@@ -210,34 +207,29 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "gRPC-with-protobuf-backend-server-to-web-server") { ?>
-                            <h2> USING gRPC WITH PROTOBUF </h2>
-                            <h3> FROM A BACKEND SERVER TO A WEB SERVER </h3>
-                            <p> The API will use an gRPC with protobuf
-                                written in go and php.
-                            </p>
-                            <p> A ?????? will be
+                            <h2> SEND DATA FROM A BACKEND SERVER TO A WEB SERVER </h2>
+                            <h3> The API will use gRPC with protobuf
+                                 written in php and go.
+                            </h3>
+                            <p> Two numbers will be
                                 sent from a backend server (client)
                                 to a web server (server)
-                                that will return an acknowledgment.
+                                that will calculate
+                                and return the sum.
                             </p>
                             <p> Code located
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-and-backend-server-apis/gRPC-with-protobuf-backend-server-to-web-server"> here </a>
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "ajax-XHR-calls-and-gRPC-with-protobuf") { ?>
-                            <h2> USING AJAX XMLHttpRequest (XHR) CALLS & gRPC WITH PROTOBUF </h2>
-                            <h3> FROM A BROWSER TO A WEB SERVER TO A BACKEND SERVER </h3>
-                            <p> The API will use an ajax XMLHttpRequest (XHR) call
-                                written in javascript and php
-                                and gRPC with protobuf
-                                written in go and php.
-                            </p>
+                            <h2> SEND DATA FROM A BROWSER TO A WEB SERVER TO A BACKEND SERVER</h2>
+                            <h3> The API will use an Ajax XMLHttpRequest (XHR) POST call
+                                 written in javascript and php and
+                                 gRPC with protobuf written in php and go.
+                            </h3>
                             <p> Two numbers will be
                                 sent from a browser (client)
-                                to a web server (server).
-                            </p>
-                            <p> Two numbers will then be
-                                sent from the web server (client)
+                                to a web server (server)
                                 to a backend server (server)
                                 that will calculate
                                 and return the sum.

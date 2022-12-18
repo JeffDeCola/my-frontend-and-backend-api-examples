@@ -1,15 +1,10 @@
-# GET REQUEST USING XMLHttpRequest (XHR)
+# GET DATA USING AN XMLHttpRequest (XHR) GET CALL
 
-_The API will use an **ajax XMLHttpRequest (XHR) call**
-written in javascript and php.
-A ?????? will be
-sent from a web server (client)
-to a browser (server)
-that will return an acknowledgment.
-A webpage will be used to
-display the ????._
+_Get data from a Web Server to a Browser.
+The API will use an **Ajax XMLHttpRequest (XHR) GET call**
+written in javascript and php._
   
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-web-server-to-browser)
+[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=ajax-XHR-calls-browser-to-web-server)
 
 ## XMLHttpRequest
 
@@ -22,58 +17,27 @@ browser and a server.
 
 ## CODE
 
-### GET USER DATA
+A Request will be
+sent from a browser (client)
+to a web server (server)
+that will return the current time.
+A webpage will be used to
+display this time.
 
-The javascript looks like this,
+### GET DATA USING XMLHttpRequest (XHR) GET CALL
 
-```js
-// GATHER ALL OPERANDS FROM INPUT 
-operand1 = document.getElementById('operand_1_input_field').value;
-operand2 = document.getElementById('operand_2_input_field').value;
-
-// SEND ATTRIBUTES TO SERVER
-postDataToServer(operand1, operand2);
-```
-
-### SEND POST REQUEST USING XMLHttpRequest (XHR)
-
-The javascript looks like this,
+Javascript,
 
 ```js
-// NEW REQUESTS
-postRequest = new XMLHttpRequest();
 
-// SEND TO SERVER
-function postDataToServer(Operand1, Operand2) {
-    
-    // CONVERT JSON TO STRING
-    var dataJSONString = JSON.stringify({ 
-        "operand1": Operand1,
-        "operand2": Operand2});
+//tbd
 
-    // OPEN CONNECTION - true means DON'T BLOCK
-    url = 'browser-and-web-server-apis/ajax-XHR-calls-browser-to-web-server/php_scripts/post_data_to_server.php';
-    postRequest.open('POST', url, true);
-
-    // SEND JSON FORMAT
-    postRequest.setRequestHeader('Content-Type', 'application/json');
-    postRequest.send(dataJSONString);
-
-}
 ```
 
-### THE PHP CODE ON THE WEB SERVER
+### SEND DATA FROM THE WEB SERVER
 
 ```php
 
-    // GET THE JSON DATA FROM THE USER
-    header("Content-Type: application/json");
-    $attributesJSON = json_decode(file_get_contents("php://input"));
-
-    // UN PARSE IT
-    $operand1 = $attributesJSON->operand1;
-    $operand2 = $attributesJSON->operand2;
-
-    // DO SOMETHING
+//tbd
 
 ```

@@ -1,19 +1,28 @@
-# USING gRPC WITH PROTOBUF
+# SEND DATA USING gRPC WITH PROTOBUF
 
-_The API will use an **gRPC with protobuf**
-written in php and go.
+_Send data from a Backend Server to a Web Server.
+The API will use an **gRPC with protobuf**
+written in go and php._
+
+[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-backend-server-to-web-server)
+
+## gRPC WITH PROTOBUF
+
+tbd
+
+## CODE
+
 Two numbers will be
-sent from a web server (client)
-to a backend server (server)
+sent from a backend server (client)
+to a web server (server)
 that will calculate
-and return the sum._
-  
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=gRPC-with-protobuf-web-server-to-backend-server)
+and return the sum.
+A webpage will be used to
+enter the data and
+display the roundtrip results.
 
-## EXAMPLE
+![IMAGE - gRPC-with-protobuf-backend-server-to-web-server - IMAGE](../../../docs/pics/gRPC-with-protobuf-backend-server-to-web-server.jpg)
 
-![IMAGE - gRPC-with-protobuf-web-server-to-backend-server - IMAGE](../../../docs/pics/gRPC-with-protobuf-web-server-to-backend-server.jpg)
-
-## TO USE
+## TBD
 
 tbd
