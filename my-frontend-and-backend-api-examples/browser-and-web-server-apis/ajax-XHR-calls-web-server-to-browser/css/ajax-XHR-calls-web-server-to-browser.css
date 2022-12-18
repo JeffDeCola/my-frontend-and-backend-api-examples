@@ -42,6 +42,14 @@
     width:100%;
 }
 
+#error_container {
+    padding-top: 0px;
+    text-align: center;
+    margin: 0 auto;
+    height: 80px;
+    width:100%;
+}
+
 /* #################### BOX CONTAINER ########################### */
 /* Will line up you items in a row */
 
@@ -101,6 +109,37 @@
     font-weight: 700;
 }
 
+/* ------------- COMMON BUTTON ITEM -------------------- */
+
+.button_item {
+    height: 80px; /* does nothing */
+    width:200px;
+}
+
+.button_title {
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.button_push {
+    border-width: 3px;
+    border-style: solid;
+    width: 194px;   /* 200px - 6px */
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button_push_text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+}
+
 /* #################### COMMENT CONTAINER ########################### */
 
 .comment_container h3 {
@@ -127,4 +166,21 @@
 
 #data_display_text {
     color: #000000;
+}
+
+/* #################### ITEMS IN THE ERROR CONTAINER ########################### */
+
+#error_button_item {
+    background-color: #ffffff;
+}
+
+#error_button_push {
+    border-color: #000000;
+    background-color: #ffffff;
+}
+
+#error_button_text {
+    color: #000000;
+    margin-top: 12px;
+    font-size: 14px;
 }

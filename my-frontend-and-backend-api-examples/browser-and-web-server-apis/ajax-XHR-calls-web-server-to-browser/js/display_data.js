@@ -1,5 +1,7 @@
 /* display_data.js */
 
+var error_toggle = true;
+
 var lightgreen = "#d4ffb7";
 var darkgreen = "#54e90f";
 var grey = "#b6b6b6";
@@ -9,29 +11,53 @@ var red = "#ff0000";
 
 console.log("STARTING display_data.js JAVASCRIPT");
 
-// WAIT: DISPLAY SERVER DATA
-console.log("WAIT: FOR SERVER DATA");
+// GET SERVER TIME  ----------------------------------------------------------------------------------------------
+setInterval(function(){
+    get_data_from_web_server();
+}, 500);
 
+// SHOW DATA  ---------------------------------------------------------------------------------------------------
 function show_data(data) {
-
-    console.log("SHOW DATA");
-
     // DISPLAY DATA
-    document.getElementById("data_display_text").innerHTML=data;
-
+    document.getElementById("data_display_text").innerHTML= data.hour + ":" + data.minute + ":" + data.second;
+    document.getElementById("data_display").style.backgroundColor=white;
+    document.getElementById("data_display").style.color=black;
 }
 
-// SERVER ERROR
-console.log("WAIT: ERROR FROM SERVER");
-
+// SERVER ERROR  ----------------------------------------------------------------------------------------------
 function server_error() {
-
-    console.log("SERVER ERROR");
-
-    // SERVER ERROR
-    document.getElementById("data_display_text").innerHTML="SERVER ERROR";
+    document.getElementById("data_display_text").innerHTML="SERVER DOWN";
     document.getElementById("data_display").style.backgroundColor=red;
     document.getElementById("data_display").style.color=black;
-    
 }
 
+// INJECT SERVER ERROR --------------------------------------------------------------------------------------
+
+function error_button_onmouseover() {
+    if (error_toggle) {
+        document.getElementById("error_button_push").style.backgroundColor=white;
+    } else {
+        document.getElementById("error_button_push").style.backgroundColor=red;
+    }
+}
+
+function error_button_onmouseout() {
+    if (error_toggle) {
+        document.getElementById("error_button_push").style.backgroundColor=white;
+    } else {
+        document.getElementById("error_button_push").style.backgroundColor=red;
+    }
+}
+
+function error_button_onclick() {
+    if (error_toggle) {
+        error_toggle = false;
+        document.getElementById("error_button_push").style.backgroundColor=red;
+        url = 'browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser/php_scripts/error.php';
+    } else {
+        error_toggle = true;
+        document.getElementById("error_button_push").style.backgroundColor=white;
+        url = 'browser-and-web-server-apis/ajax-XHR-calls-web-server-to-browser/php_scripts/get_data_from_server.php';
+    }
+
+}

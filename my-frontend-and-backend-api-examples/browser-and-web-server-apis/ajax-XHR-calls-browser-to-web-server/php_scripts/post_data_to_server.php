@@ -16,10 +16,14 @@
 
     // DO SOMETHING
     $sum = (float)$operand1 + (float)$operand2;
-    sleep(2);
+    sleep(1);
 
-    // RESPONSE
-    $array = ['sum'=>$sum];
+    // BUILD ARRAY
+    $array = [
+        'sum'=>$sum
+    ];
+
+    // SEND IT TO THE BROWSER
     echo json_encode($array);
 
 ?>

@@ -8,8 +8,7 @@ var state = "start";
 // completed_operands
 // send_add_to_server
 // sent_add_to_server
-// show_result_in_sum
-// done 
+// showed_sum 
 // server_error
 
 console.log("STATE = " + state);
@@ -54,7 +53,6 @@ function reset_button_onclick() {
     document.getElementById("add_button_push").style.backgroundColor=white;
     document.getElementById("add_button_text").innerHTML="ADD";
     serverError = false;
-    serverResponse = false;
     document.getElementById('operand_1_input_field').disabled = false;
     document.getElementById('operand_2_input_field').disabled = false;
 }
@@ -158,44 +156,25 @@ function add() {
 
     // SEND ATTRIBUTES TO SERVER
     // "POST"/SEND DATA TO SERVER - RUN PHP FILE ON SERVER - GET RESPONSE
-    // This will update serverData
-    postDataToServer(operand1, operand2);
+    send_data_to_web_server(operand1, operand2);
 
     // UPDATE STATE
     state = "sent_add_to_server";
     console.log("STATE = " + state);
 }
 
-// STEP 5 ------------------------------------------------------------------------------------------------------------
-// WAIT: FOR SERVER TO ADD
-// STATE: sent_add_to_server -> show_result_in_sum
-console.log("STEP 5 - WAIT: FOR SERVER TO ADD");
+// STEP 5A ------------------------------------------------------------------------------------------------------------
+// WAIT TO SHOW SUM
+// STATE: sent_add_to_server -> showed_sum
 
-setInterval(function() {
-    if (state == "sent_add_to_server") {
-        // CHECK FOR SERVER RESPONSE
-        if (serverResponse) {
-            // PUT RESULT IN SUM IN PREVIEW
-            state = "show_result_in_sum";
-            console.log("STATE = " + state);
-            show_sum();
-        }
-    }
-}, 1000);
-
-// STEP 6 ------------------------------------------------------------------------------------------------------------
-// SHOW SUM
-// STATE: show_result_in_sum -> done
-
-function show_sum() {
-    console.log("STEP 6 - SHOW SUM");
+function show_data(data) {
+    console.log("STEP 5A - WAIT TO SHOW SUM");
 
     // CLEAN UP THE PIC
     document.getElementById("add_button_push").classList.add("button_pulse"); // PULSE ADD BUTTON
 
     // GET RESPONSE
-    sum=serverData.sum;
-    document.getElementById("sum_display_text").innerHTML=sum;
+    document.getElementById("sum_display_text").innerHTML=data.sum;
 
     // CLEAN UP
     document.getElementById("add_button_push").classList.remove("button_pulse"); // REMOVE PULSE
@@ -206,27 +185,24 @@ function show_sum() {
     document.getElementById('operand_1_input_field').disabled = true;
     document.getElementById('operand_2_input_field').disabled = true;
 
-    state = "done";
+    state = "showed_sum";
     console.log("STATE = " + state);
 
 }
 
-// STEP 6A ------------------------------------------------------------------------------------------------------------
+// STEP 5B ------------------------------------------------------------------------------------------------------------
 // WAIT: ERRORS FROM SERVER
 // STATE: sent_add_to_server -> server_error
-console.log("STEP 6A - ERROR FROM SERVER");
 
-setInterval(function() {
-    if (state == "sent_add_to_server") {
-        // CHECK FOR SERVER RESPONSE
-        if (serverError) {
-            // SERVER ERROR
-            state = "server_error";
-            console.log("STATE = " + state);
-            document.getElementById("sum_display_text").innerHTML="SERVER ERROR";
-            document.getElementById("sum_display").style.backgroundColor=red;
-            document.getElementById("sum_display").style.color=black;
-            document.getElementById("sum_display").classList.remove("button_pulse"); // REMOVE PULSE
-        }
-    }
-}, 1000);
+function server_error() {          
+    console.log("STEP 5B - SERVER ERROR");
+
+    document.getElementById("sum_display_text").innerHTML="SERVER ERROR";
+    document.getElementById("sum_display").style.backgroundColor=red;
+    document.getElementById("sum_display").style.color=black;
+    document.getElementById("sum_display").classList.remove("button_pulse"); // REMOVE PULSE
+
+    state = "server_error";
+    console.log("STATE = " + state);
+
+}
