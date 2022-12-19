@@ -1,6 +1,6 @@
 # GET DATA FROM A WEB SERVER USING AN XMLHttpRequest (XHR) GET CALL
 
-_**GET** data
+_**Get data**
 from a Web Server
 to a Browser
 using an **Ajax XMLHttpRequest (XHR) GET Call**._
