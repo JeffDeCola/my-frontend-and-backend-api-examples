@@ -14,7 +14,7 @@ The request sent by XMLHttpRequest can either be a GET or POST.
 Its methods provide the ability to send network requests between a
 browser and a server.
 
-![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../../docs/pics/send-data-from-browser-to-web-server-using-ajax-xhr-post-call.jpg)
+![IMAGE - send-data-from-browser-to-web-server-using-ajax-xhr-post-call - IMAGE](../../../docs/pics/send-data-from-browser-to-web-server-using-ajax-xhr-post-call.jpg)
 
 ## CODE
 

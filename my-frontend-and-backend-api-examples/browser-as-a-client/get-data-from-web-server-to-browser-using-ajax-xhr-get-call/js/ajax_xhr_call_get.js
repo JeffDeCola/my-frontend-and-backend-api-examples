@@ -1,48 +1,41 @@
-// ajax_xhr_calls_post.js
-// SEND POST REQUEST USING XMLHttpRequest (XHR)
+// ajax_xhr_calls_get.js
+// GET REQUEST USING XMLHttpRequest (XHR)
 // There are other methods to use ajax, we are using XHR Calls
 
-var url = 'browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call/php_scripts/post_data_to_server.php';
+var url = 'browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call/php_scripts/get_data_from_server.php';
 
-console.log("STARTING ajax_xhr_calls_post.js JAVASCRIPT");
+console.log("STARTING ajax_xhr_calls_get.js JAVASCRIPT");
 
 // -----------------------------------------------------------------------------------------------------------------------
-// SEND DATA TO WEB SERVER
-function send_data_to_web_server(operand1, operand2) {
+// GET DATA FROM WEB SERVER
+function get_data_from_web_server() {
 
     // CREATE A NEW REQUEST
-    postRequest = new XMLHttpRequest();
-        if (!postRequest) {
+    getRequest = new XMLHttpRequest();
+        if (!getRequest) {
         console.warn("Giving up :( Cannot create an XMLHTTP instance");
     }
     
-    // CONVERT JSON TO STRING
-    var attributesJSONString = JSON.stringify({
-        "operand1": operand1,
-        "operand2": operand2
-    });
-
     // OPEN CONNECTION - CREATE GET REQUEST
     // true means DON'T BLOCK
-    postRequest.open('POST', url, true);
+    getRequest.open('GET', url, true);
 
     // SEND JSON FORMAT
-    postRequest.setRequestHeader('Content-Type', 'application/json');
-    postRequest.send(attributesJSONString);
-
+    getRequest.setRequestHeader('Content-Type', 'application/json');
+    getRequest.send();
 
     // LISTEN AND KICK OFF FUNCTION WHEN READY
-    postRequest.onreadystatechange = function() {
+    getRequest.onreadystatechange = function() {
 
         // CHECK IF IT'S DONE
         try {
-            if (postRequest.readyState === XMLHttpRequest.DONE) {
+            if (getRequest.readyState === XMLHttpRequest.DONE) {
 
-                if (postRequest.status === 200) {
+                if (getRequest.status === 200) {
 
                     // THE MAGIC HAPPENS HERE *******************************************
                     // RECEIVE JSON FORMAT
-                    serverData = JSON.parse(postRequest.responseText);
+                    serverData = JSON.parse(getRequest.responseText);
                     show_data(serverData);
 
                 } else {
