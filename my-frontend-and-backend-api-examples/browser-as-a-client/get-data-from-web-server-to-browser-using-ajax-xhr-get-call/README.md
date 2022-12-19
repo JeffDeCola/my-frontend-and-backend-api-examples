@@ -1,4 +1,4 @@
-# GET DATA FROM A WEB SERVER USING AN XMLHttpRequest (XHR) POST CALL
+# GET DATA FROM A WEB SERVER USING AN XMLHttpRequest (XHR) GET CALL
 
 _**GET** data
 from a Web Server
@@ -14,7 +14,7 @@ The request sent by XMLHttpRequest can either be a GET or POST.
 Its methods provide the ability to send network requests between a
 browser and a server.
 
-![IMAGE - ajax-XHR-calls-browser-to-web-server - IMAGE](../../../docs/pics/get-data-from-web-server-to-browser-using-ajax-xhr-get-call.jpg)
+![IMAGE - get-data-from-web-server-to-browser-using-ajax-xhr-get-call - IMAGE](../../../docs/pics/get-data-from-web-server-to-browser-using-ajax-xhr-get-call.jpg)
 
 ## CODE
 
