@@ -18,6 +18,12 @@
 
         <h3> DATA FROM WEB SERVER </h3>
         <p>
+            A request will be
+            sent from a browser (client)
+            to a web server (server)
+            that will return the current time.
+        </p>
+        <p>
             I used my
             <a href="https://www.jeffdecola.com/my-php-containers/index.php?page=dynamic_items_container"> dynamic_items_container </a>
             php container for the layout

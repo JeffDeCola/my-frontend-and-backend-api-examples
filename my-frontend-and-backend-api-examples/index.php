@@ -22,7 +22,8 @@
                             "get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf",
                             "get-data-from-web-server-to-backend-server-using-grpc-with-protobuf",
                             "send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf",
-                            "send-data-from-backend-server-to-web-server-using-grpc-with-protobuf");
+                            "send-data-from-backend-server-to-web-server-using-grpc-with-protobuf",
+                            "send-data-from-browser-to-web-server-to-backend-server");
 
         // THE PAGE TITLE
         if (in_array($_GET['page'], $whitelist)) {
@@ -43,24 +44,28 @@
                 echo "<meta name='Description' content='APIs - get-data-from-backend-server-to-web-server-using-grpc-with-protobuf - Jeff DeCola' />";
             }
             elseif ($_GET['page'] == "send-data-from-web-server-to-backend-server-using-grpc-with-protobuf") {
-                echo "<title> APIs -send-data-from-web-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
+                echo "<title> APIs - send-data-from-web-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
                 echo "<meta name='Description' content='APIs - send-data-from-web-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola' />";
             }
             elseif ($_GET['page'] == "get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf") {
-                echo "<title> APIs -get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
+                echo "<title> APIs - get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
                 echo "<meta name='Description' content='APIs - get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola' />";
             }
             elseif ($_GET['page'] == "get-data-from-web-server-to-backend-server-using-grpc-with-protobuf") {
-                echo "<title> APIs -get-data-from-web-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
+                echo "<title> APIs - get-data-from-web-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
                 echo "<meta name='Description' content='APIs - get-data-from-web-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola' />";
             }
             elseif ($_GET['page'] == "send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf") {
-                echo "<title> APIs -send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
+                echo "<title> APIs - send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola </title>";
                 echo "<meta name='Description' content='APIs - send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf - Jeff DeCola' />";
             }
             elseif ($_GET['page'] == "send-data-from-backend-server-to-web-server-using-grpc-with-protobuf") {
-                echo "<title> APIs -send-data-from-backend-server-to-web-server-using-grpc-with-protobuf - Jeff DeCola </title>";
+                echo "<title> APIs - send-data-from-backend-server-to-web-server-using-grpc-with-protobuf - Jeff DeCola </title>";
                 echo "<meta name='Description' content='APIs - send-data-from-backend-server-to-web-server-using-grpc-with-protobuf - Jeff DeCola' />";
+            }
+            elseif ($_GET['page'] == "send-data-from-browser-to-web-server-to-backend-server") {
+                echo "<title> APIs - send-data-from-browser-to-web-server-to-backend-server - Jeff DeCola </title>";
+                echo "<meta name='Description' content='APIs - send-data-from-browser-to-web-server-to-backend-server - Jeff DeCola' />";
             }
             // For the index.php page
             else  {
@@ -163,6 +168,10 @@
                     <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-backend-server-to-web-server-using-grpc-with-protobuf">
                          Send Data to a Web Server (gRPC with protobuf) </a> </li>
                     <br />
+                    <li class="nav_client_type"> MULTI-HOP EXAMPLES </li>
+                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-to-backend-server">
+                         Send Data to a Web Server (Ajax XHR POST call) to a Backend Server (gRPC with protobuf) </a> </li>
+                    <br />
                     <li><a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples"> ALL CODE LOCATED AT MY GITHUB REPO </a> </li>
                     <li><a href="http://www.jeffdecola.com"> HOME </a> </li>
                     
@@ -253,6 +262,14 @@
                                 written in php and go
                             </p>
                         <?php }
+                        elseif ($_GET['page'] == "send-data-from-browser-to-web-server-to-backend-server") { ?>
+                            <h2> SEND DATA FROM A BROWSER TO A WEB SERVER TO A BACKEND SERVER </h2>
+                            <h3> USING AN AJAX XMLHttpRequest (XHR) POST CALL and gRPC WITH PROTOBUF RESPECTIVELY</h3>
+                            <p> 
+                                <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/multi-hop-examples/send-data-from-browser-to-web-server-to-backend-server"> Code </a>
+                                written in php and go
+                            </p>
+                        <?php }
                         // For the index.php page
                         else { ?>
                             <p> Should not get this </p>
@@ -315,6 +332,10 @@
                                 else if ($_GET['page'] == "send-data-from-backend-server-to-web-server-using-grpc-with-protobuf")
                                 {
                                     include("backend-server-as-a-client/send-data-from-backend-server-to-web-server-using-grpc-with-protobuf/send-data-from-backend-server-to-web-server-using-grpc-with-protobuf.php");
+                                }
+                                else if ($_GET['page'] == "send-data-from-browser-to-web-server-to-backend-server")
+                                {
+                                    include("multi-hop-examples/send-data-from-browser-to-web-server-to-backend-server/send-data-from-browser-to-web-server-to-backend-server.php");
                                 }
                             }
                             // NOT IN WHITELIST - Page does not exist - Just give a 404 error

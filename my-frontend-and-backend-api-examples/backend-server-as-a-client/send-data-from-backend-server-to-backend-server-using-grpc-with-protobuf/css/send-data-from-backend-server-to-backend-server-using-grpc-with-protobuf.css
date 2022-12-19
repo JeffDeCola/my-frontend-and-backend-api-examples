@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* get-data-from-backend-server-to-web-server-using-grpc-with-protobuf.CSS */
+
+/* #################### WRAPPER ###################################### */
+
+#get-data-from-backend-server-to-web-server-using-grpc-with-protobuf_wrapper {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* #################### MAIN CONTAINERS ############################### */
+
+#picture_container {
+    padding-top: 0px;
+    width: 80%;
+    text-align:center;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:100%;
+}
