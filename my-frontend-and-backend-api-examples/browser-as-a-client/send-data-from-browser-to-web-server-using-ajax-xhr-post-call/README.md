@@ -1,6 +1,6 @@
 # SEND DATA TO A WEB SERVER USING AN XMLHttpRequest (XHR) POST CALL
 
-_**SEND** data
+_**Send data**
 from a Browser
 to a Web Server
 using an **Ajax XMLHttpRequest (XHR) POST Call**._

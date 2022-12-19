@@ -1,6 +1,6 @@
 # SEND DATA TO A BACKEND SERVER USING gRPC WITH PROTOBUF
 
-_**SEND** data
+_**Send data**
 from a Web Server
 to a Backend Server
 using **gRPC with protobuf**._

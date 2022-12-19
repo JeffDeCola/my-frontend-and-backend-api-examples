@@ -1,6 +1,6 @@
 # GET DATA FROM A BACKEND SERVER USING gRPC WITH PROTOBUF
 
-_**GET** data
+_**Get data**
 from a Backend Server
 to a Web Server
 using **gRPC with protobuf**._
