@@ -7,7 +7,7 @@
     <!-- ------------------------------------------------------------------------------------------------------- -->
     <div class="picture_container">
 
-        <img src="web-server-as-a-client/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf/images/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf.jpg" alt="send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf"/>
+        <img src="backend-server-as-a-client/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf/images/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf.jpg" alt="send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf"/>
 
     </div>
 

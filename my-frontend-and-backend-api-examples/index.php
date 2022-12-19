@@ -247,7 +247,7 @@
                             </p>
                         <?php }
                         elseif ($_GET['page'] == "send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf") { ?>
-                            <h2> SEND DATA FROM A WEB SERVER TO A BACKEND SERVER </h2>
+                            <h2> SEND DATA FROM A BACKEND SERVER TO A BACKEND SERVER </h2>
                             <h3> USING gRPC WITH PROTOBUF</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf"> Code </a>
