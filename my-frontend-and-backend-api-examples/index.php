@@ -121,7 +121,8 @@
 
             <h2 class="hidden"> HEADER </h2>
 
-            <h1> MY FRONTEND AND BACKEND API EXAMPLES </h1>
+            <h1> <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php">
+                 MY FRONTEND AND BACKEND API EXAMPLES </a> </h1>
 
             <!-- <div id="header_container">
                 <p> tbd </p>
