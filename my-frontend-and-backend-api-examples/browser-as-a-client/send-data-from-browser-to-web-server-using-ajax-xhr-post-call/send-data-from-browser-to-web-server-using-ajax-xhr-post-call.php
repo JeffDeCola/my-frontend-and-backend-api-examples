@@ -18,6 +18,13 @@
 
         <h3> TRY IT </h3>
         <p>
+            Two numbers will be
+            sent from a browser (client)
+            to a web server (server)
+            that will calculate
+            and return the sum.
+        </p>
+        <p>
             I used my
             <a href="https://www.jeffdecola.com/my-php-containers/index.php?page=dynamic_items_container"> dynamic_items_container </a>
             php container for the layout

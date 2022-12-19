@@ -82,3 +82,13 @@ Lets figure out how they can talk with each other.
   _**Send data**
   to a Web Server
   using **gRPC with protobuf**._
+
+## MULTI-HOP EXAMPLES
+
+* [send-data-from-browser-to-web-server-to-backend-server](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/multi-hop-examples/send-data-from-browser-to-web-server-to-backend-server)
+
+  _**Send data**
+  to a Web Server
+  using an **Ajax XMLHttpRequest (XHR) POST Call**
+  to a Backend Server
+  using **gRPC with protobuf**._
