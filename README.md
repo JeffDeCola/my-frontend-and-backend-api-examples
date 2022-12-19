@@ -31,70 +31,54 @@ Lets figure out how they can talk with each other.
 
 ## BROWSER AS A CLIENT
 
-* [get-data-from-web-sever-to-browser-using-ajax-xhr-get-call]()
+* [get-data-from-web-server-to-browser-using-ajax-xhr-get-call](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call)
 
   _**GET** data
   from a Web Server
-  to a Browser.
-  The API will use an **Ajax XMLHttpRequest (XHR) GET Call**
-  written in javascript and php._
+  using an **Ajax XMLHttpRequest (XHR) GET Call**._
 
-* [send-data-from-brower-to-web-server-using-ajax-xhr-post-call]()
+* [send-data-from-browser-to-web-server-using-ajax-xhr-post-call](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call)
 
   _**SEND** data
-  from a Browser
-  to a Web Server.
-  The API will use an **Ajax XMLHttpRequest (XHR) POST Call**
-  written in javascript and php._
+  to a Web Server
+  using an **Ajax XMLHttpRequest (XHR) POST Call**._
 
 ## WEB SERVER AS A CLIENT
 
-* [get-data-from-backend-sever-to-web-server-using-grpc-with-protobuf]()
+* [get-data-from-backend-server-to-web-server-using-grpc-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/web-server-as-a-client/get-data-from-backend-server-to-web-server-using-grpc-with-protobuf)
 
   _**GET** data
   from a Backend Server
-  to a Web Server.
-  The API will use **gRPC with protobuf**
-  written in php and go._
+  using **gRPC with protobuf**._
 
-* [send-data-from-web-sever-to-backend-server-using-grpc-with-protobuf]()
+* [send-data-from-web-server-to-backend-server-using-grpc-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf)
 
   _**SEND** data
-  from a Web Server
-  to a Backend Server.
-  The API will use **gRPC with protobuf**
-  written in php and go._
+  to a Backend Server
+  using **gRPC with protobuf**._
 
 ## BACKEND SERVER AS A CLIENT
 
-* [get-data-from-backend-sever-to-backend-server-using-grpc-with-protobuf]()
+* [get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf)
 
   _**GET** data
   from a Backend Server
-  to a Backend Server.
-  The API will use **gRPC with protobuf**
-  written in php and go._
+  using **gRPC with protobuf**._
 
-  * [get-data-from-web-sever-to-backend-server-using-grpc-with-protobuf]()
+* [get-data-from-web-server-to-backend-server-using-grpc-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-web-server-to-backend-server-using-grpc-with-protobuf)
 
   _**GET** data
   from a Web Server
-  to a Backend Server.
-  The API will use **gRPC with protobuf**
-  written in php and go._
+  using **gRPC with protobuf**._
 
-* [send-data-from-backend-sever-to-backend-server-using-grpc-with-protobuf]()
+* [send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/backend-server-as-a-client/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf)
 
   _**SEND** data
-  from a Backend Server
-  to a Backend Server.
-  The API will use **gRPC with protobuf**
-  written in php and go._
+  to a Backend Server
+  using **gRPC with protobuf**._
 
-* [send-data-from-backend-sever-to-web-server-using-grpc-with-protobuf]()
+* [send-data-from-backend-server-to-web-server-using-grpc-with-protobuf](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/my-frontend-and-backend-api-examples/backend-server-as-a-client/send-data-from-backend-server-to-web-server-using-grpc-with-protobuf)
 
   _**SEND** data
-  from a Backend Server
-  to a Web Server.
-  The API will use **gRPC with protobuf**
-  written in php and go._
+  to a Web Server
+  using **gRPC with protobuf**._

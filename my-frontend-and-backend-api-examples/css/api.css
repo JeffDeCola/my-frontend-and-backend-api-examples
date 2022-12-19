@@ -7,19 +7,14 @@
     color: #0048af;
 }
 
-/* ####################### CONTAINER HEADER CONTAINER ### */
+/* ####################### NAV CONTAINER ################ */
 
-/* #container_button {
-    color: #F2D1D1;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 5px;
-    margin-top: 7px;
-    background-color: #D76A6C;
-    width: 65px;
-} */
+.nav_client_type {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ####################### CONTAINER HEADER CONTAINER ### */
 
 .container_header_container {
     text-align: center;
@@ -51,4 +46,14 @@
 
 .container_header_container a:hover, .container_header_container a:active  {
     color: #001074;
+}
+
+#overview_container {
+    padding-top: 0px;
+    width: 80%;
+    text-align:center;
+    margin:auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:100%;
 }
