@@ -16,18 +16,48 @@
     <!-- ------------------------------------------------------------------------------------------------------- -->
     <div class="comment_container">
 
+        <h3> PROTOBUF MESSAGE </h3>
+        <p>
+            Compiled to the go and php language respectively
+        </p>
+
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="code_container">
+
+        <h3> PROTOBUF MESSAGE </h3>
+
+        <pre class="prettyprint lang-protobuf">
+            syntax = "proto3";
+
+            package main;
+
+            option go_package = "./protobuf-message";
+
+            message Data {
+                int32 operand1 = 1;
+                int32 operand2 = 2;
+            }
+        </pre>
+        
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="comment_container">
+
         <h3> TRY IT </h3>
         <p>
             Two numbers will be
             sent from a web server (client)
             to a backend server (server)
             that will calculate
-            and return the sum.
+            and return the sum
         </p>
         <p>
             A webpage was added to
             enter the data and
-            display the roundtrip result.
+            display the roundtrip result
         </p>
         <p>
             I used my
