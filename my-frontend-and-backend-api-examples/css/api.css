@@ -10,8 +10,13 @@
 /* ####################### NAV CONTAINER ################ */
 
 .nav_client_type {
+    padding-bottom: 3px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.nav_client_bold {
+    font-weight: 900;
 }
 
 /* ####################### CONTAINER HEADER CONTAINER ### */
@@ -47,6 +52,8 @@
 .container_header_container a:hover, .container_header_container a:active  {
     color: #001074;
 }
+
+/* ####################### OVERVIEW CONTAINER ### */
 
 #overview_container {
     padding-top: 0px;
