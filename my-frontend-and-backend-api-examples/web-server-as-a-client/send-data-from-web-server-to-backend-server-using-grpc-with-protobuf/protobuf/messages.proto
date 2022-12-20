@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package main;
+
+option go_package = "./protobuf-message";
+
+message Data {
+    int32 operand1 = 1;
+    int32 operand2 = 2;
+}
