@@ -127,7 +127,7 @@
             <h2 class="hidden"> HEADER </h2>
 
             <h1> <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php">
-                 MY FRONTEND AND BACKEND API EXAMPLES </a> </h1>
+                MY FRONTEND AND BACKEND API EXAMPLES </a> </h1>
 
             <!-- <div id="header_container">
                 <p> tbd </p>
@@ -147,29 +147,38 @@
              <div id="nav_container">
                 <ul>
                     <li class="nav_client_type"> BROWSER AS A CLIENT </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-web-server-to-browser-using-ajax-xhr-get-call">
+                    <?php if ($_GET['page'] == "get-data-from-web-server-to-browser-using-ajax-xhr-get-call") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-web-server-to-browser-using-ajax-xhr-get-call">
                          Get Data from a Web Server (Ajax XHR GET call) </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-using-ajax-xhr-post-call">
+                    <?php if ($_GET['page'] == "send-data-from-browser-to-web-server-using-ajax-xhr-post-call") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-using-ajax-xhr-post-call">
                          Send Data to a Web Server (Ajax XHR POST call) </a> </li>
                     <br />
                     <li class="nav_client_type"> WEB SERVER AS A CLIENT </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-backend-server-to-web-server-using-grpc-with-protobuf">
+                    <?php if ($_GET['page'] == "get-data-from-backend-server-to-web-server-using-grpc-with-protobuf") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-backend-server-to-web-server-using-grpc-with-protobuf">
                          Get Data from a Backend Server (gRPC with protobuf) </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-web-server-to-backend-server-using-grpc-with-protobuf">
+                    <?php if ($_GET['page'] == "send-data-from-web-server-to-backend-server-using-grpc-with-protobuf") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-web-server-to-backend-server-using-grpc-with-protobuf">
                          Send Data to a Backend Server (gRPC with protobuf) </a> </li>
                     <br />
                     <li class="nav_client_type"> BACKEND SERVER AS A CLIENT </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf">
+                    <?php if ($_GET['page'] == "get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf">
                          Get Data from a Backend Server (gRPC with protobuf) </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-web-server-to-backend-server-using-grpc-with-protobuf">
+                    <?php if ($_GET['page'] == "get-data-from-web-server-to-backend-server-using-grpc-with-protobuf") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-web-server-to-backend-server-using-grpc-with-protobuf">
                          Get Data from a Web Server (gRPC with protobuf) </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf">
+                    <?php if ($_GET['page'] == "send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf">
                          Send Data to a Backend Server (gRPC with protobuf) </a> </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-backend-server-to-web-server-using-grpc-with-protobuf">
+                    <?php if ($_GET['page'] == "send-data-from-backend-server-to-web-server-using-grpc-with-protobuf") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-backend-server-to-web-server-using-grpc-with-protobuf">
                          Send Data to a Web Server (gRPC with protobuf) </a> </li>
                     <br />
                     <li class="nav_client_type"> MULTI-HOP EXAMPLES </li>
-                    <li><a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-to-backend-server">
+                    <?php if ($_GET['page'] == "send-data-from-browser-to-web-server-to-backend-server") { ?> <li class="nav_client_bold"> <?php } else { ?> <li> <?php } ?> 
+                    <a href="http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-to-backend-server">
                          Send Data to a Web Server (Ajax XHR POST call) to a Backend Server (gRPC with protobuf) </a> </li>
                     <br />
                     <li><a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples"> ALL CODE LOCATED AT MY GITHUB REPO </a> </li>
@@ -199,7 +208,7 @@
                         <?php }
                         elseif ($_GET['page'] == "get-data-from-web-server-to-browser-using-ajax-xhr-get-call") { ?>
                             <h2> GET DATA FROM A WEB SERVER TO A BROWSER </h2>
-                            <h3> USING AN AJAX XMLHttpRequest (XHR) GET CALL</h3>
+                            <h3> Using an Ajax XMLHttpRequest (XHR) GET Call</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call"> Code </a>
                                 written in javascript and php
@@ -207,7 +216,7 @@
                         <?php }
                         elseif ($_GET['page'] == "send-data-from-browser-to-web-server-using-ajax-xhr-post-call") { ?>
                             <h2> SEND DATA FROM A BROWSER TO A WEB SERVER </h2>
-                            <h3> USING AN AJAX XMLHttpRequest (XHR) POST CALL</h3>
+                            <h3> Using an Ajax XMLHttpRequest (XHR) POST Call</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call"> Code </a>
                                 written in javascript and php
@@ -215,7 +224,7 @@
                         <?php }
                         elseif ($_GET['page'] == "get-data-from-backend-server-to-web-server-using-grpc-with-protobuf") { ?>
                             <h2> GET DATA FROM A BACKEND SERVER TO A WEB SERVER </h2>
-                            <h3> USING gRPC WITH PROTOBUF</h3>
+                            <h3> Using gRPC with Protobuf</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/get-data-from-backend-server-to-web-server-using-grpc-with-protobuf"> Code </a>
                                 written in php and go
@@ -223,7 +232,7 @@
                         <?php }
                         elseif ($_GET['page'] == "send-data-from-web-server-to-backend-server-using-grpc-with-protobuf") { ?>
                             <h2> SEND DATA FROM A WEB SERVER TO A BACKEND SERVER </h2>
-                            <h3> USING gRPC WITH PROTOBUF</h3>
+                            <h3> Using gRPC with Protobuf</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf"> Code </a>
                                 written in php and go
@@ -232,7 +241,7 @@
 
                         elseif ($_GET['page'] == "get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf") { ?>
                             <h2> GET DATA FROM A BACKEND SERVER TO A BACKEND SERVER </h2>
-                            <h3> USING gRPC WITH PROTOBUF</h3>
+                            <h3> Using gRPC with Protobuf</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf"> Code </a>
                                 written in go
@@ -240,7 +249,7 @@
                         <?php }
                         elseif ($_GET['page'] == "get-data-from-web-server-to-backend-server-using-grpc-with-protobuf") { ?>
                             <h2> GET DATA FROM A WEB SERVER TO A BACKEND SERVER </h2>
-                            <h3> USING gRPC WITH PROTOBUF</h3>
+                            <h3> Using gRPC with Protobuf</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-web-server-to-backend-server-using-grpc-with-protobuf"> Code </a>
                                 written in php and go
@@ -248,7 +257,7 @@
                         <?php }
                         elseif ($_GET['page'] == "send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf") { ?>
                             <h2> SEND DATA FROM A BACKEND SERVER TO A BACKEND SERVER </h2>
-                            <h3> USING gRPC WITH PROTOBUF</h3>
+                            <h3> Using gRPC with Protobuf</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf"> Code </a>
                                 written in go
@@ -256,7 +265,7 @@
                         <?php }
                         elseif ($_GET['page'] == "send-data-from-backend-server-to-web-server-using-grpc-with-protobuf") { ?>
                             <h2> SEND DATA FROM A BACKEND SERVER TO A WEB SERVER </h2>
-                            <h3> USING gRPC WITH PROTOBUF</h3>
+                            <h3> Using gRPC with Protobuf</h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/send-data-from-backend-server-to-web-server-using-grpc-with-protobuf"> Code </a>
                                 written in php and go
@@ -264,7 +273,7 @@
                         <?php }
                         elseif ($_GET['page'] == "send-data-from-browser-to-web-server-to-backend-server") { ?>
                             <h2> SEND DATA FROM A BROWSER TO A WEB SERVER TO A BACKEND SERVER </h2>
-                            <h3> USING AN AJAX XMLHttpRequest (XHR) POST CALL and gRPC WITH PROTOBUF RESPECTIVELY</h3>
+                            <h3> Using an Ajax XMLHttpRequest (XHR) POST Call and gRPC with Protobuf Respectively </h3>
                             <p> 
                                 <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/multi-hop-examples/send-data-from-browser-to-web-server-to-backend-server"> Code </a>
                                 written in php and go
