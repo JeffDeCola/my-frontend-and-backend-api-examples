@@ -1,38 +1,14 @@
 @charset "utf-8";
-/* get-data-from-web-server-to-browser-using-ajax-xhr-get-call.CSS */
+/* get-data-from-web-server-to-browser-using-ajax-xhr-get-call.css */
 
-/* #################### WRAPPER ###################################### */
+/* #### WRAPPER ############################################### */
 
 #get-data-from-web-server-to-browser-using-ajax-xhr-get-call_wrapper {
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-/* #################### MAIN CONTAINERS ############################### */
-
-#picture_container {
-    padding-top: 0px;
-    width: 80%;
-    text-align:center;
-    margin:auto;
-    padding-top:10px;
-    padding-bottom:10px;
-    width:100%;
-}
-
-.comment_container {
-    text-align: center;
-    margin: 0 auto;
-    height: 100%;
-    width:100%;
-    padding-top: 15px;
-    padding-bottom: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: #3f7cd3;
-}
+/* #### DATA CONTAINER ######################################## */
 
 #data_container {
     padding-top: 30px;
@@ -42,119 +18,7 @@
     width:100%;
 }
 
-#error_container {
-    padding-top: 0px;
-    text-align: center;
-    margin: 0 auto;
-    height: 80px;
-    width:100%;
-}
-
-/* #################### BOX CONTAINER ########################### */
-/* Will line up you items in a row */
-
-.box_container {
-    text-align: center;
-    overflow: hidden;
-}
-
-.box_items_container{
-    height: inherit;
-    left: 50%;
-    position: relative;
-}
-
-.box_item {
-    display: inline-block;
-    vertical-align: top;
-    left: -50%;
-    position: relative;
-}
-
-/* #################### COMMON ITEMS TO USE ################################### */
-
-/* ------------- COMMON SPACER ITEM -------------------- */
-
-.spacer_item {
-    height: 80px; /* with inline-block does nothing */
-    width: 20px;
-}
-
-/* ------------- COMMON DISPLAY ITEM -------------------- */
-
-.display_item {
-    height: 80px; /* does nothing */
-    width:200px;
-}
-
-.display_title {
-    height: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.display_info {
-    border-width: 3px;
-    border-style: solid;
-    width: 194px;   /* 200px - 6px */
-    height: 40px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.display_info_text {
-    margin-top: 7px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/* ------------- COMMON BUTTON ITEM -------------------- */
-
-.button_item {
-    height: 80px; /* does nothing */
-    width:200px;
-}
-
-.button_title {
-    height: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.button_push {
-    border-width: 3px;
-    border-style: solid;
-    width: 194px;   /* 200px - 6px */
-    height: 40px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.button_push_text {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Roboto Mono', monospace;
-}
-
-/* #################### COMMENT CONTAINER ########################### */
-
-.comment_container h3 {
-    color: #ffffff;
-}
-
-.comment_container p {
-    color: #ffffff;
-}
-
-.comment_container a:visited {
-    color: #9ebcff;
-}
-
-/* #################### ITEMS IN THE DATA CONTAINER ########################### */
+/* ITEMS  ------------------------------------------------ */
 
 #data_item {
     background-color: #ffffff;
@@ -168,7 +32,17 @@
     color: #000000;
 }
 
-/* #################### ITEMS IN THE ERROR CONTAINER ########################### */
+/* #### ERROR CONTAINER ####################################### */
+
+#error_container {
+    padding-top: 0px;
+    text-align: center;
+    margin: 0 auto;
+    height: 80px;
+    width:100%;
+}
+
+/* ITEMS  ------------------------------------------------ */
 
 #error_button_item {
     background-color: #ffffff;

@@ -1,60 +1,14 @@
 @charset "utf-8";
-/* send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.CSS */
+/* send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.css */
 
-/* This removes the arrows from input number boxes*/
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-
-/* #################### WRAPPER ###################################### */
+/* #### WRAPPER ############################################### */
 
 #send-data-from-web-server-to-backend-server-using-grpc-with-protobuf_wrapper {
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-/* #################### MAIN CONTAINERS ############################### */
-
-#picture_container {
-    padding-top: 0px;
-    width: 80%;
-    text-align:center;
-    margin:auto;
-    padding-top:10px;
-    padding-bottom:10px;
-    width:100%;
-}
-
-.code_container {
-    text-align:left;
-    /* background-color:#ABABAB; */
-    width: 90%;
-    min-width: 200px;
-    max-width: 500px;
-    margin: auto;
-    padding: 5px;
-    font-family: "Courier New", Courier, monospace;
-    font-size:14px;
-    font-weight:bold;
-}
-
-.comment_container {
-    text-align: center;
-    margin: 0 auto;
-    height: 100%;
-    width:100%;
-    padding-top: 15px;
-    padding-bottom: 1px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: #3f7cd3;
-}
+/* #### EQUATION CONTAINER #################################### */
 
 #equation_container {
     padding-top: 30px;
@@ -64,77 +18,7 @@ input[type=number]::-webkit-outer-spin-button {
     width:100%;
 }
 
-#process_container {
-    padding-top: 40px;
-    text-align: center;
-    margin: 0 auto;
-    height: 80px;
-    width:100%;
-}
-
-/* #################### BOX CONTAINER ########################### */
-/* Will line up you items in a row */
-
-.box_container {
-    text-align: center;
-    overflow: hidden;
-}
-
-.box_items_container{
-    height: inherit;
-    left: 50%;
-    position: relative;
-}
-
-.box_item {
-    display: inline-block;
-    vertical-align: top;
-    left: -50%;
-    position: relative;
-}
-
-/* #################### COMMON ITEMS TO USE ################################### */
-
-/* ------------- COMMON SPACER ITEM -------------------- */
-
-.spacer_item {
-    height: 80px; /* with inline-block does nothing */
-    width: 20px;
-}
-
-/* ------------- COMMON INPUT ITEM -------------------- */
-
-.input_item {
-    height: 80px; /* with inline-block does nothing */
-    width: 200px;
-}
-
-.input_title {
-    height: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.input_enter {
-    border-width: 3px;
-    border-style: solid;
-    width: 194px;   /* 200px - 6px */
-    height: 40px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.input_enter input {
-    margin-top: 7px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    resize: none;
-    outline: none;
-}
-
-/* ------------- COMMON OPERATION ITEM -------------------- */
+/* ITEMS  ------------------------------------------------ */
 
 .operation_item {
     text-align: center;
@@ -145,102 +29,6 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 10px;
     padding-right: 10px;
 }
-
-/* ------------- COMMON DISPLAY ITEM -------------------- */
-
-.display_item {
-    height: 80px; /* does nothing */
-    width:200px;
-}
-
-.display_title {
-    height: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.display_info {
-    border-width: 3px;
-    border-style: solid;
-    width: 194px;   /* 200px - 6px */
-    height: 40px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.display_info_text {
-    margin-top: 7px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/* ------------- COMMON BUTTON ITEM -------------------- */
-
-.button_item {
-    height: 80px; /* does nothing */
-    width:200px;
-}
-
-.button_title {
-    height: 20px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.button_push {
-    border-width: 3px;
-    border-style: solid;
-    width: 194px;   /* 200px - 6px */
-    height: 40px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.button_push_text {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.button_pulse {
-    animation: Pulse infinite alternate ease 1s;  
-}
-
-@keyframes Pulse {
-    0% {
-        opacity: 0.2;
-      }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* #################### COMMENT CONTAINER ########################### */
-
-.comment_container h3 {
-    color: #ffffff;
-}
-
-.comment_container p {
-    color: #ffffff;
-}
-
-.comment_container a:visited {
-    color: #9ebcff;
-}
-
-/* #################### CODE CONTAINER ############################################# */
-
-.code_container h3 {
-    color: #000000;
-    text-align: center;
-}
-
-/* #################### ITEMS IN THE EQUATIONS CONTAINER ########################### */
 
 #operand_1_item {
     background-color: #ffffff;
@@ -289,7 +77,17 @@ input[type=number]::-webkit-outer-spin-button {
     color: #000000;
 }
 
-/* #################### ITEMS IN THE PROCESS CONTAINER ########################### */
+/* #### PROCESS CONTAINER ##################################### */
+
+#process_container {
+    padding-top: 40px;
+    text-align: center;
+    margin: 0 auto;
+    height: 80px;
+    width:100%;
+}
+
+/* ITEMS  ------------------------------------------------ */
 
 #add_button_item {
     background-color: #ffffff;
