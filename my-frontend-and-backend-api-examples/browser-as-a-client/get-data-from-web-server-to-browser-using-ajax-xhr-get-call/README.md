@@ -31,51 +31,28 @@ Call this javascript function every time you want to get data from the web serve
 This will get data using an XMLHttpRequest (XHR) GET call.
 
 ```js
+// MAIN PARTS OF THE CODE
 function get_data_from_web_server() {
 
-    // CREATE A NEW REQUEST
-    getRequest = new XMLHttpRequest();
-        if (!getRequest) {
-        console.warn("Giving up :( Cannot create an XMLHTTP instance");
-    }
-    
-    // OPEN CONNECTION - CREATE GET REQUEST
-    // true means DON'T BLOCK
-    getRequest.open('GET', url, true);
+        // PHP FILE LOCATION
+        var url = 'path to file/filename.php';
 
-    // SEND JSON FORMAT
-    getRequest.setRequestHeader('Content-Type', 'application/json');
-    getRequest.send();
+        // CREATE A NEW REQUEST
+        getRequest = new XMLHttpRequest();
+        
+        // OPEN CONNECTION - CREATE GET REQUEST
+        getRequest.open  'GET' , url, true);
 
-    // LISTEN AND KICK OFF FUNCTION WHEN READY
-    getRequest.onreadystatechange = function() {
+        // SEND JSON FORMAT
+        getRequest.setRequestHeader('Content-Type', 'application/json');
+        getRequest.send();
 
-        // CHECK IF IT'S DONE
-        try {
-            if (getRequest.readyState === XMLHttpRequest.DONE) {
-
-                if (getRequest.status === 200) {
-
-                    // THE MAGIC HAPPENS HERE *******************************************
-                    // RECEIVE JSON FORMAT
-                    serverData = JSON.parse(getRequest.responseText);
-                    show_data(serverData.data);
-
-                } else {
-                    console.warn("There was an issue getting data to the server");
-                    serverError = true;
-                }
-            }
+        // LISTEN AND KICK OFF FUNCTION WHEN READY
+        getRequest.onreadystatechange = function() {
+            ...see code...
         }
-        // WHEN THE SERVER IS DOWN
-        catch( e ) {
-            console.warn("There was an issue getting data to the server: Caught Server Exception:" + e.description);
-            serverError = true;
-            server_error();
-        }
-
-    }
-}
+    ...
+}        
 ```
 
 ### SERVER SIDE

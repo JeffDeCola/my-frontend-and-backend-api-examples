@@ -34,6 +34,8 @@ This javascript gets user input.
 Javascript,
 
 ```js
+// MAIN PARTS OF THE CODE
+
 // GATHER ALL OPERANDS FROM INPUT 
 operand1 = document.getElementById('operand_1_input_field').value;
 operand2 = document.getElementById('operand_2_input_field').value;
@@ -46,57 +48,33 @@ Call this javascript function every time you want to send data to the web server
 This will send data using an XMLHttpRequest (XHR) POST call.
 
 ```js
-// -----------------------------------------------------------------------------------------------------------------------
-// SEND DATA TO WEB SERVER
+// MAIN PARTS OF THE CODE
 function send_data_to_web_server(operand1, operand2) {
 
-    // CREATE A NEW REQUEST
-    postRequest = new XMLHttpRequest();
-        if (!postRequest) {
-        console.warn("Giving up :( Cannot create an XMLHTTP instance");
-    }
-    
-    // CONVERT JSON TO STRING
-    var attributesJSONString = JSON.stringify({ 
-        "operand1": operand1,
-        "operand2": operand2
-    });
+        // PHP FILE LOCATION
+        var url = 'path to file/filename.php';
 
-    // OPEN CONNECTION - CREATE GET REQUEST
-    // true means DON'T BLOCK
-    postRequest.open('POST', url, true);
+        // CREATE A NEW REQUEST
+        postRequest = new XMLHttpRequest();
+        
+        // CONVERT JSON TO STRING
+        var attributesJSONString = JSON.stringify({
+            "operand1": operand1,
+            "operand2": operand2
+        });
 
-    // SEND JSON FORMAT
-    postRequest.setRequestHeader('Content-Type', 'application/json');
-    postRequest.send(attributesJSONString);
+        // OPEN CONNECTION - CREATE POST REQUEST
+        postRequest.open  'POST' , url, true);
 
-    // LISTEN AND KICK OFF FUNCTION WHEN READY
-    postRequest.onreadystatechange = function() {
+        // SEND JSON FORMAT
+        postRequest.setRequestHeader('Content-Type', 'application/json');
+        postRequest.send(attributesJSONString);
 
-        // CHECK IF IT'S DONE
-        try {
-            if (postRequest.readyState === XMLHttpRequest.DONE) {
-
-                if (postRequest.status === 200) {
-
-                    // THE MAGIC HAPPENS HERE *******************************************
-                    // RECEIVE JSON FORMAT
-                    serverData = JSON.parse(postRequest.responseText);
-                    show_data(serverData);
-
-                } else {
-                    console.warn("There was an issue getting data to the server");
-                    server_error();
-                }
-            }
+        // LISTEN AND KICK OFF FUNCTION WHEN READY
+        postRequest.onreadystatechange = function() {
+            ...see code...
         }
-        // WHEN THE SERVER IS DOWN
-        catch( e ) {
-            console.warn("There was an issue getting data to the server: Caught Server Exception:" + e.description);
-            server_error();
-        }
-
-    }
+    ...
 }
 ```
 

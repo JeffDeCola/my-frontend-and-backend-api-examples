@@ -69,4 +69,64 @@
         </div>
     </div>
 
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="comment_container">
+
+        <h3> XMLHttpRequest (XHR) GET Call </h3>
+
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="code_container">
+
+        <h3> 
+            <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/main/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call/js/ajax_xhr_call_get.js">
+                JAVASCRIPT HIGHLIGHTS (CLIENT SIDE)
+            </a>
+        </h3>
+
+        <pre class="prettyprint lang-protobuf">
+
+        // PHP FILE LOCATION
+        var url = 'path to file/filename.php';
+
+        // CREATE A NEW REQUEST
+        getRequest = new XMLHttpRequest();
+        
+        // OPEN CONNECTION - CREATE GET REQUEST
+        getRequest.open <span style="color:blue; font: weight 900px;"> 'GET' </span>, url, true);
+
+        // SEND JSON FORMAT
+        getRequest.setRequestHeader('Content-Type', 'application/json');
+        getRequest.send();
+
+        // LISTEN AND KICK OFF FUNCTION WHEN READY
+        getRequest.onreadystatechange = function() {
+            ...see code...
+        }
+        
+        </pre>
+
+        <h3> 
+            <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/main/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call/php_scripts/get_data_from_server.php">
+                PHP HIGHLIGHTS (SERVER SIDE)  
+            </a>
+        </h3>
+
+        <pre class="prettyprint lang-protobuf">
+
+        // BUILD ARRAY
+        $dataArray = [
+            'hour'=>$hour,
+            'minute'=>$minute,
+            'second'=>$second,
+        ];
+
+        // SEND IT TO THE BROWSER
+        echo json_encode($dataArray);
+
+        </pre>
+        
+    </div>
+
 </div>

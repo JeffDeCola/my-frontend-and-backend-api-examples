@@ -22,7 +22,7 @@ function send_data_to_web_server(operand1, operand2) {
         "operand2": operand2
     });
 
-    // OPEN CONNECTION - CREATE GET REQUEST
+    // OPEN CONNECTION - CREATE POST REQUEST
     // true means DON'T BLOCK
     postRequest.open('POST', url, true);
 

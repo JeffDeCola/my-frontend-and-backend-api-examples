@@ -25,9 +25,18 @@ message Data {
 }
 ```
 
+## PROTOCOL BUFFERS (PROTOBUF) & gRPC
+
+* **Protobuf** (Protocol Buffers)
+  * Human readable platform-neutral messages
+  * Shared by both the client and the server
+
+* **gRPC** (google Remote Procedure Call)
+  * A way of running a remote procedure on a remote machine
+
 ## OVERVIEW
 
-A frontend will be attached to this, but is not part of this example.
+A frontend will be attached to this example, but is not part of it.
 
 ![IMAGE - send-data-from-web-server-to-backend-server-using-grpc-with-protobuf - IMAGE](../../../docs/pics/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.jpg)
 
@@ -41,6 +50,19 @@ and return the sum.
 A webpage was added to
 enter the data and
 display the roundtrip result.
+
+### PROTOBUF MESSAGE
+
+```protobuf
+syntax = "proto3";
+
+package main;
+
+message Data {
+    int32 operand1 = 1;
+    int32 operand2 = 2;
+}
+```
 
 ### CLIENT SIDE
 

@@ -7,40 +7,10 @@
 <div id="send-data-from-web-server-to-backend-server-using-grpc-with-protobuf_wrapper">
     
     <!-- ------------------------------------------------------------------------------------------------------- -->
-    <div id="picture_container">
+    <div class="picture_container">
 
         <img src="web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf/images/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.jpg" alt="send-data-from-web-server-to-backend-server-using-grpc-with-protobuf"/>
 
-    </div>
-
-    <!-- ------------------------------------------------------------------------------------------------------- -->
-    <div class="comment_container">
-
-        <h3> PROTOBUF MESSAGE </h3>
-        <p>
-            Compiled to the go and php language respectively
-        </p>
-
-    </div>
-
-    <!-- ------------------------------------------------------------------------------------------------------- -->
-    <div class="code_container">
-
-        <h3> PROTOBUF MESSAGE </h3>
-
-        <pre class="prettyprint lang-protobuf">
-            syntax = "proto3";
-
-            package main;
-
-            option go_package = "./protobuf-message";
-
-            message Data {
-                int32 operand1 = 1;
-                int32 operand2 = 2;
-            }
-        </pre>
-        
     </div>
 
     <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -157,6 +127,54 @@
             </div>
 
         </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="comment_container">
+
+        <h3> PROTOBUF MESSAGE </h3>
+        <p>
+            Compiled to the go and php language respectively
+        </p>
+
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="code_container">
+
+        <h3> PROTOBUF MESSAGE (ADD LINK!) </h3>
+
+        <pre class="prettyprint lang-protobuf">
+        
+        syntax = "proto3";
+
+        package main;
+
+        option go_package = "./protobuf-message";
+
+        message Data {
+            int32 operand1 = 1;
+            int32 operand2 = 2;
+        }
+        
+        </pre>
+
+        <h3> PHP (CLIENT SIDE) (ADD LINK!) </h3>
+        
+        <pre class="prettyprint lang-protobuf">
+        
+        TBD
+        
+        </pre>
+
+        <h3> GO (SERVER SIDE) (ADD LINK!) </h3>
+
+        <pre class="prettyprint lang-protobuf">
+    
+        TBD
+
+        </pre>
+
     </div>
 
 </div>
