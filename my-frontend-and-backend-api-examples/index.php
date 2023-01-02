@@ -107,6 +107,11 @@
     
     <!-- GOOGLE ANALYTICS -->
 
+    <!-- BLUEHOST PEAR PACKAGES -->
+    <?php 
+        ini_set("include_path", '/home1/jeffdeco/php:' . ini_get("include_path") );
+    ?>
+
 </head>
 
 <body>

@@ -7,7 +7,7 @@
 <div id="send-data-from-browser-to-web-server-using-ajax-xhr-post-call_wrapper">
     
     <!-- ------------------------------------------------------------------------------------------------------- -->
-    <div id="picture_container">
+    <div class="picture_container">
 
         <img src="browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call/images/send-data-from-browser-to-web-server-using-ajax-xhr-post-call.jpg" alt="send-data-from-browser-to-web-server-using-ajax-xhr-post-call"/>
 
@@ -124,5 +124,71 @@
         </div>
     </div>
 
-</div>
+        <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="comment_container">
 
+        <h3> XMLHttpRequest (XHR) POST Call </h3>
+
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="code_container">
+
+        <h3> 
+            <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call/js/ajax_xhr_call_post.js">
+                JAVASCRIPT HIGHLIGHTS (CLIENT SIDE)
+            </a>
+        </h3>
+
+        <pre class="prettyprint lang-protobuf">
+
+        // PHP FILE LOCATION
+        var url = 'path to file/filename.php';
+
+        // CREATE A NEW REQUEST
+        postRequest = new XMLHttpRequest();
+        
+        // CONVERT JSON TO STRING
+        var attributesJSONString = JSON.stringify({
+            "operand1": operand1,
+            "operand2": operand2
+        });
+
+        // OPEN CONNECTION - CREATE POST REQUEST
+        postRequest.open <span style="color:blue; font: weight 900px;"> 'POST' </span>, url, true);
+
+        // SEND JSON FORMAT
+        postRequest.setRequestHeader('Content-Type', 'application/json');
+        postRequest.send(attributesJSONString);
+
+        // LISTEN AND KICK OFF FUNCTION WHEN READY
+        postRequest.onreadystatechange = function() {
+            ...see code...
+        }
+
+        </pre>
+
+        <h3> 
+            <a href="https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call/php_scripts/post_data_to_server.php">
+                PHP HIGHLIGHTS (SERVER SIDE)  
+            </a>
+        </h3>
+
+        <pre class="prettyprint lang-protobuf">
+
+        // GET THE JSON DATA FROM THE USER
+        header("Content-Type: application/json");
+        $attributesJSON = json_decode(file_get_contents("php://input"));
+
+        // UN PARSE IT
+        $operand1 = $attributesJSON->operand1;
+        $operand2 = $attributesJSON->operand2;
+
+        // DO SOMETHING
+        ... 
+
+        </pre>
+        
+    </div>
+
+</div>

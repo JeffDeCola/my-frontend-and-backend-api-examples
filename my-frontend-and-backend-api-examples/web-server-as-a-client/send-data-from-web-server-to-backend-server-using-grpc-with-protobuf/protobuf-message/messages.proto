@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "./my_protobuf_package";
+
+package MyCalculator;
+
+service Calculator {
+    rpc Add(Send) returns (Receive);
+}
+
+message Send {
+    float operand1 = 1;
+    float operand2 = 2;
+}
+
+message Receive {
+    float result = 1;
+}
