@@ -9,7 +9,7 @@ using **gRPC with protobuf**._
 
 ## OVERVIEW
 
-![IMAGE - get-data-from-backend-server-to-web-server-using-grpc-with-protobuf - IMAGE](../../../docs/pics/get-data-from-backend-server-to-web-server-using-grpc-with-protobuf.jpg)
+![IMAGE](../../../docs/pics/get-data-from-backend-server-to-web-server-using-grpc-with-protobuf.jpg)
 
 ## CODE
 

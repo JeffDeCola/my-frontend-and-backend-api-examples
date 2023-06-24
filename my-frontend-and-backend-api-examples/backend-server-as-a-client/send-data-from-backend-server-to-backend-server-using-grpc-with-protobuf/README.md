@@ -9,7 +9,7 @@ using **gRPC with protobuf**._
 
 ## OVERVIEW
 
-![IMAGE - send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf - IMAGE](../../../docs/pics/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf.jpg)
+![IMAGE](../../../docs/pics/send-data-from-backend-server-to-backend-server-using-grpc-with-protobuf.jpg)
 
 ## CODE
 

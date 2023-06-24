@@ -10,7 +10,7 @@
 
 ## OVERVIEW
 
-![IMAGE - send-data-from-browser-to-web-server-to-backend-server - IMAGE](../../../docs/pics/send-data-from-browser-to-web-server-to-backend-server.jpg)
+![IMAGE](../../../docs/pics/send-data-from-browser-to-web-server-to-backend-server.jpg)
 
 ## CODE
 
