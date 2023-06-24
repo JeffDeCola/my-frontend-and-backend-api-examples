@@ -76,7 +76,7 @@ resources:
     source:
       #uri: https://github.com/jeffdecola/my-frontend-and-backend-api-examples
       uri: git@github.com:jeffdecola/my-frontend-and-backend-api-examples.git
-      branch: master
+      branch: main
       private_key: ((concourse_git_private_key))
 
   - name: resource-slack-alert
@@ -91,4 +91,4 @@ resources:
     source:
       repository: jeffdecola/my-frontend-and-backend-api-examples 
       access_token: ((repo_github_token))
-      branch: master
+      branch: main
