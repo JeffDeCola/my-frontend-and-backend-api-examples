@@ -1,25 +1,30 @@
-# my-frontend-and-backend-api-examples
+# MY FRONTEND AND BACKEND API EXAMPLES
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a7fd79cc4717b3da27d6/maintainability)](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/maintainability)
-[![Issue Count](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/issues)
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
+[![Tag Latest](https://img.shields.io/github/v/tag/jeffdecola/my-frontend-and-backend-api-examples)](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tags)
+[![Go Reference](https://pkg.go.dev/badge/github.com/JeffDeCola/my-frontend-and-backend-api-examples.svg)](https://pkg.go.dev/github.com/JeffDeCola/my-frontend-and-backend-api-examples)
+[![Go Report Card](https://goreportcard.com/badge/github.com/JeffDeCola/my-frontend-and-backend-api-examples)](https://goreportcard.com/report/github.com/JeffDeCola/my-frontend-and-backend-api-examples)
+[![codeclimate Maintainability](https://api.codeclimate.com/v1/badges/?????????/maintainability)](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/maintainability)
+[![codeclimate Issue Count](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-frontend-and-backend-api-examples/issues)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
 _A place to keep my frontend and backend API examples._
 
-Table of Contents,
+Table of Contents
 
 * [FRONTEND AND BACKEND API EXAMPLES](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#frontend-and-backend-api-examples)
 * [BROWSER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser-as-a-client)
 * [WEB SERVER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#web-server-as-a-client)
 * [BACKEND SERVER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#backend-server-as-a-client)
+* [MULTI-HOP EXAMPLES](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#multi-hop-examples)
 
-Documentation and reference,
+Documentation and Reference
 
-* [See offsite demos](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-frontend-and-backend-api-examples/)
-_built with
-[concourse ci](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/master/ci-README.md)_
+* [Offsite demos](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php)
+* This repos
+  [github webpage](https://jeffdecola.github.io/my-frontend-and-backend-api-examples/)
+  _built with
+  [concourse](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/master/ci-README.md)_
 
 ## FRONTEND AND BACKEND API EXAMPLES
 
