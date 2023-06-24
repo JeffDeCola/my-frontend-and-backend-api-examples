@@ -4,7 +4,7 @@ _**Send data**
 from a Browser
 to a Web Server
 using an **Ajax XMLHttpRequest (XHR) POST Call**._
-  
+
 [See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-using-ajax-xhr-post-call)
 
 ## XMLHttpRequest
@@ -36,7 +36,7 @@ Javascript,
 ```js
 // MAIN PARTS OF THE CODE
 
-// GATHER ALL OPERANDS FROM INPUT 
+// GATHER ALL OPERANDS FROM INPUT
 operand1 = document.getElementById('operand_1_input_field').value;
 operand2 = document.getElementById('operand_2_input_field').value;
 
@@ -56,7 +56,7 @@ function send_data_to_web_server(operand1, operand2) {
 
         // CREATE A NEW REQUEST
         postRequest = new XMLHttpRequest();
-        
+
         // CONVERT JSON TO STRING
         var attributesJSONString = JSON.stringify({
             "operand1": operand1,

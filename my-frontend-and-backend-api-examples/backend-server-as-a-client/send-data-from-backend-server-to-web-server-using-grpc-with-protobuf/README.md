@@ -4,7 +4,7 @@ _**Send data**
 from a Backend Server
 to a Web Server
 using **gRPC with protobuf**._
-  
+
 [See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-backend-server-to-web-server-using-grpc-with-protobuf)
 
 ## OVERVIEW
