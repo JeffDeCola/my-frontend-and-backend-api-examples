@@ -14,7 +14,7 @@ The request sent by XMLHttpRequest can either be a GET or POST.
 Its methods provide the ability to send network requests between a
 browser and a server.
 
-![IMAGE - get-data-from-web-server-to-browser-using-ajax-xhr-get-call - IMAGE](../../../docs/pics/get-data-from-web-server-to-browser-using-ajax-xhr-get-call.jpg)
+![IMAGE](../../../docs/pics/get-data-from-web-server-to-browser-using-ajax-xhr-get-call.jpg)
 
 ## CODE
 
@@ -39,7 +39,7 @@ function get_data_from_web_server() {
 
         // CREATE A NEW REQUEST
         getRequest = new XMLHttpRequest();
-        
+
         // OPEN CONNECTION - CREATE GET REQUEST
         getRequest.open  'GET' , url, true);
 
@@ -52,7 +52,7 @@ function get_data_from_web_server() {
             ...see code...
         }
     ...
-}        
+}
 ```
 
 ### SERVER SIDE

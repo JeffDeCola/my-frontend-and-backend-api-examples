@@ -38,7 +38,7 @@ message Data {
 
 A frontend will be attached to this example, but is not part of it.
 
-![IMAGE - send-data-from-web-server-to-backend-server-using-grpc-with-protobuf - IMAGE](../../../docs/pics/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.jpg)
+![IMAGE](../../../docs/pics/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.jpg)
 
 ## CODE
 
