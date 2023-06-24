@@ -45,7 +45,11 @@ plugins:
   # Examines source code to identify suspicious constructs and potential bugs
   govet:
     enabled: true
-
+  phpcodesniffer:
+    enabled: true
+  csslint:
+    enabled: true
+    
 # --------------------------------------------------------------------------
 # exclude_patterns: Exclude files and/or directories from analysis
 # - <pattern>
