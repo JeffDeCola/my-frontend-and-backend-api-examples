@@ -4,7 +4,7 @@ _**Get data**
 from a Web Server
 to a Browser
 using an **Ajax XMLHttpRequest (XHR) GET Call**._
-  
+
 [See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-web-server-to-browser-using-ajax-xhr-get-call)
 
 ## XMLHttpRequest
