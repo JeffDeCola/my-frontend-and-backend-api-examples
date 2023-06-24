@@ -12,7 +12,7 @@ _A place to keep my frontend and backend API examples._
 
 Table of Contents
 
-* [FRONTEND AND BACKEND API EXAMPLES](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#frontend-and-backend-api-examples)
+* [OVERVIEW](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#overview)
 * [BROWSER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#browser-as-a-client)
 * [WEB SERVER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#web-server-as-a-client)
 * [BACKEND SERVER AS A CLIENT](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples#backend-server-as-a-client)
@@ -26,7 +26,7 @@ Documentation and Reference
   _built with
   [concourse](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/blob/master/ci-README.md)_
 
-## FRONTEND AND BACKEND API EXAMPLES
+## OVERVIEW
 
 The **frontend** usually consists of a browser.
 The **backend** may consist of a web server and/or a backend server(s).
