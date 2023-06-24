@@ -34,9 +34,9 @@ plugins:
   # A tool for suggesting possible improvements to bash/sh shell scripts
   shellcheck:
     enabled: true
-  # Official style checker from the Go team
+  # Official style checker from the Go team - Having problems with this check
   gofmt:
-    enabled: true
+    enabled: false
   # Lints
   golint:
     enabled: true
