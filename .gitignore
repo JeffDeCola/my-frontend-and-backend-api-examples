@@ -1,21 +1,23 @@
-# CONCOURSE
+# website-my-frontend-and-backend-api-examples-.gitignore
+
+# CONCOURSE SECRETS
 .credentials.yml
-
-# VSCODE
-.vscode/ 
-
-# GO
-coverage.out
 
 # macOS
 .DS_Store
 
-# Windows
-*Zone.Identifier
+# WINDOWS
+*.jpg:Zone.Identifier
 
-# DREAMWAVER
-dwsync.xml
-_notes/
-
-# SFTP VS CODE EXTENTION
+# EXTENSION - SFTP SECRETS
+.vscode/
 sftp.json
+
+# BINARIES
+**/bin/my-frontend-and-backend-api-examples
+
+# BINARY USED FOR DOCKER BUILD
+**/build/my-frontend-and-backend-api-examples
+
+# TEST COVERAGE
+**/test/test_coverage.txt
