@@ -1,7 +1,7 @@
 # website-my-frontend-and-backend-api-examples-.gitignore
 
 # CONCOURSE SECRETS
-.credentials.yml
+.concourse-secrets.yml
 
 # macOS
 .DS_Store
