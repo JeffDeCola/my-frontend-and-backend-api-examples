@@ -1,16 +1,28 @@
-# SEND DATA TO A WEB SERVER USING AN XMLHttpRequest (XHR) POST CALL
+# SEND DATA FROM A WEB SERVER TO A BACKEND SERVER (using gRPC with protobuf)
+
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
 _**Send data**
-from a Web server
+from a Web Server
 to a Backend Server
-using an **gRPC with protobuf**._
+(using an **gRPC with protobuf)**._
 
-Documentation and reference,
+Table of Contents
 
+* [PROTOBUF](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf#protobuf)
+* [PROTOCOL BUFFERS (PROTOBUF) & gRPC](#protocol-buffers-protobuf--grpc)
+* [OVERVIEW](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf#overview)
+* [CODE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf#code)
+  * [PROTOBUF MESSAGE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf#protobuf-message)
+  * [CLIENT SIDE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf#client-side)
+  * [SERVER SIDE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf#server-side)
+
+Documentation and Reference
+
+* [offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-web-server-to-backend-server-using-grpc-with-protobuf)
 * The frontend uses
   [send-data-from-browser-to-web-server-using-ajax-xhr-post-call](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call)
-
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-web-server-to-backend-server-using-grpc-with-protobuf)
 
 ## PROTOBUF
 
@@ -38,7 +50,7 @@ message Data {
 
 A frontend will be attached to this example, but is not part of it.
 
-![IMAGE](../../../docs/pics/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.jpg)
+![IMAGE](../../../docs/pics/web-server-as-a-client/send-data-from-web-server-to-backend-server-using-grpc-with-protobuf.svg)
 
 ## CODE
 

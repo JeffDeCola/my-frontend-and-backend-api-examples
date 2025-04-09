@@ -1,11 +1,23 @@
-# GET DATA FROM A WEB SERVER USING AN XMLHttpRequest (XHR) GET CALL
+# GET DATA FROM A WEB SERVER TO A BROWSER (using an AJAX XMLHttpRequest (XHR) GET call)
+
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
 _**Get data**
 from a Web Server
 to a Browser
-using an **Ajax XMLHttpRequest (XHR) GET Call**._
+(using an **Ajax XMLHttpRequest (XHR) GET Call**)._
 
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-web-server-to-browser-using-ajax-xhr-get-call)
+Table of Contents
+
+* [XMLHttpRequest](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call#xmlhttprequest)
+* [CODE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call#code)
+  * [CLIENT SIDE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call#client-side)
+  * [SERVER SIDE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call#server-side)
+
+Documentation and Reference
+
+* [offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-web-server-to-browser-using-ajax-xhr-get-call)
 
 ## XMLHttpRequest
 
@@ -14,7 +26,7 @@ The request sent by XMLHttpRequest can either be a GET or POST.
 Its methods provide the ability to send network requests between a
 browser and a server.
 
-![IMAGE](../../../docs/pics/get-data-from-web-server-to-browser-using-ajax-xhr-get-call.jpg)
+![IMAGE](../../../docs/pics/browser-as-a-client/get-data-from-web-server-to-browser-using-ajax-xhr-get-call.svg)
 
 ## CODE
 

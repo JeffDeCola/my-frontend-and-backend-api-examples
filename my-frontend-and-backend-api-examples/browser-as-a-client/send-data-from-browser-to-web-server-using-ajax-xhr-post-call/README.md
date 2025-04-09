@@ -1,11 +1,23 @@
-# SEND DATA TO A WEB SERVER USING AN XMLHttpRequest (XHR) POST CALL
+# SEND DATA FROM A BROWSER TO TO A WEB SERVER (using an AJAX XMLHttpRequest (XHR) POST call)
+
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
 _**Send data**
 from a Browser
 to a Web Server
-using an **Ajax XMLHttpRequest (XHR) POST Call**._
+(using an **Ajax XMLHttpRequest (XHR) POST Call**)._
 
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-using-ajax-xhr-post-call)
+Table of Contents
+
+* [XMLHttpRequest](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call#xmlhttprequest)
+* [CODE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call#code)
+  * [CLIENT SIDE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call#client-side)
+  * [SERVER SIDE](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call#server-side)
+
+Documentation and Reference
+
+* [offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=send-data-from-browser-to-web-server-using-ajax-xhr-post-call)
 
 ## XMLHttpRequest
 
@@ -14,7 +26,7 @@ The request sent by XMLHttpRequest can either be a GET or POST.
 Its methods provide the ability to send network requests between a
 browser and a server.
 
-![IMAGE](../../../docs/pics/send-data-from-browser-to-web-server-using-ajax-xhr-post-call.jpg)
+![IMAGE](../../../docs/pics/browser-as-a-client/send-data-from-browser-to-web-server-using-ajax-xhr-post-call.svg)
 
 ## CODE
 
