@@ -1,15 +1,25 @@
-# GET DATA FROM A BACKEND SERVER USING gRPC WITH PROTOBUF
+# GET DATA FROM A BACKEND SERVER TO A BACKEND SERVER (using gRPC with protobuf)
+
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
 _**Get data**
 from a Backend Server
 to a Backend Server
-using **gRPC with protobuf**._
+(using **gRPC with protobuf)**._
 
-[See offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf)
+* [Overview](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf#overview)
+* [Code](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf#code)
+  * [Client Side](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf#client-side)
+  * [Server Side](https://github.com/JeffDeCola/my-frontend-and-backend-api-examples/tree/main/my-frontend-and-backend-api-examples/backend-server-as-a-client/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf#server-side)
+
+Documentation and Reference
+
+* [offsite demo](http://www.jeffdecola.com/my-frontend-and-backend-api-examples/index.php?page=get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf)
 
 ## OVERVIEW
 
-![IMAGE](../../../docs/pics/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf.jpg)
+![IMAGE](../../../docs/pics/backend-server-as-a-client/get-data-from-backend-server-to-backend-server-using-grpc-with-protobuf.svg)
 
 ## CODE
 
